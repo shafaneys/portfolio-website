@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rate Card - Job & Collaboration</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <style>body { box-sizing: border-box; }</style>
+ </head>
+ <body class="h-full job-page yiyaa-ratecard-page">
+  <div class="app-root font-syne" id="app">
+   <div class="section-view active job-theme" style="display: block; min-height: 100%;">
+    <div class="detail-shell">
+     <div class="detail-topbar flex items-center justify-between mb-10 fade-in">
+      <a href="job.html" class="flex items-center gap-2 text-sm" style="color:#0066ff;text-decoration:none;cursor:pointer;">
+       <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> Back to Job
+      </a>
+      <span class="font-mono text-xs tracking-widest job-accent">RATE CARD</span>
+     </div>
+
+     <section class="detail-section fade-in" style="margin-bottom:0;">
+      <div class="yiyaa-accordion-stack">
+       <details class="job-card section-frame yiyaa-accordion-card">
+        <summary class="yiyaa-accordion-summary">
+         <div>
+          <span class="section-kicker">01</span>
+          <h2 class="section-heading job-accent" style="margin-bottom:0;">Character Information</h2>
+         </div>
+         <span class="yiyaa-accordion-icon">+</span>
+        </summary>
+        <div class="yiyaa-accordion-content">
+         <div class="yiyaa-character-showcase">
+          <!-- Hero Profile Section -->
+          <div class="yiyaa-profile-hero">
+           <div class="profile-avatar">
+            <img src="assets/job-ratecard-profile.jpg" alt="Yiyaa profile photo" style="width:96px;height:96px;border-radius:999px;object-fit:cover;object-position:center;display:block;border:2px solid rgba(255,255,255,0.75);box-shadow:0 12px 30px rgba(0,0,0,0.16);">
+           </div>
+           <div class="profile-info">
+            <span class="profile-label">Character Profile</span>
+            <h3>Yiyaa Cantik Sholehot</h3>
+            <p>Mahasiswi hukum & teknologi • Sporty-petite • Creative soul • Yali-yali (hijabi) sometimes</p>
+           </div>
+          </div>
+
+          <!-- Quick Stats Grid -->
+          <div class="yiyaa-stats-grid">
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="ruler" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">Height</span>
+             <span class="stat-value">155 cm</span>
+            </div>
+           </div>
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="scale" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">Weight</span>
+             <span class="stat-value">45 kg</span>
+            </div>
+           </div>
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="user" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">Bust</span>
+             <span class="stat-value">34A (82 cm)</span>
+            </div>
+           </div>
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="activity" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">Tummy</span>
+             <span class="stat-value">65 cm</span>
+            </div>
+           </div>
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="move-horizontal" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">Waist</span>
+             <span class="stat-value">72 cm</span>
+            </div>
+           </div>
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="move-vertical" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">Hip</span>
+             <span class="stat-value">82 cm</span>
+            </div>
+           </div>
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="arrow-up-down" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">Shoulder</span>
+             <span class="stat-value">40 cm</span>
+            </div>
+           </div>
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="scissors" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">Hair</span>
+             <span class="stat-value">Black Straight Layer</span>
+            </div>
+           </div>
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="palette" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">SkinTone</span>
+             <span class="stat-value">IV (Olive Tane Caramel)</span>
+            </div>
+           </div>
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="eye" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">Eyes</span>
+             <span class="stat-value">Glasses (Thick affff)</span>
+            </div>
+           </div>
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="map-pin" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">Domicile</span>
+             <span class="stat-value">Bintaro, Tangsel</span>
+            </div>
+           </div>
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="shield" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">Lifestyle</span>
+             <span class="stat-value">No tattoo, no piercing</span>
+            </div>
+           </div>
+           <div class="stat-item">
+            <div class="stat-icon">
+             <i data-lucide="ban" style="width:20px;height:20px;"></i>
+            </div>
+            <div class="stat-content">
+             <span class="stat-label">Habits</span>
+             <span class="stat-value">Not smoker nor vape</span>
+            </div>
+           </div>
+          </div>
+
+          <!-- Personality Traits -->
+          <div class="yiyaa-traits-section">
+           <h4>Personality & Vibes</h4>
+           <div class="traits-grid">
+            <span class="trait-tag warm">Warm & Caring</span>
+            <span class="trait-tag creative">Creative</span>
+            <span class="trait-tag sporty">Sporty</span>
+            <span class="trait-tag expressive">Expressive</span>
+            <span class="trait-tag respectful">Respectful</span>
+            <span class="trait-tag genuine">Genuine</span>
+           </div>
+          </div>
+
+          <!-- Lifestyle Highlights -->
+          <div class="yiyaa-lifestyle-highlights">
+           <div class="highlight-card">
+            <div class="highlight-icon">
+             <i data-lucide="activity" style="width:24px;height:24px;"></i>
+            </div>
+            <div class="highlight-content">
+             <h5>Daily Routine</h5>
+             <p>Study • Gym • Clean eating • Quality sleep</p>
+            </div>
+           </div>
+           <div class="highlight-card">
+            <div class="highlight-icon">
+             <i data-lucide="heart" style="width:24px;height:24px;"></i>
+            </div>
+            <div class="highlight-content">
+             <h5>Interests</h5>
+             <p>Art • Design • Books • Outdoor activities</p>
+            </div>
+           </div>
+           <div class="highlight-card">
+            <div class="highlight-icon">
+             <i data-lucide="shield" style="width:24px;height:24px;"></i>
+            </div>
+            <div class="highlight-content">
+             <h5>Values & Lifestyle</h5>
+             <p>Respect • Consent • Mutual care • Boundaries • Not into drugs, alcohol, nor other addictions</p>
+            </div>
+           </div>
+          </div>
+
+          <!-- Key Information -->
+          <div class="yiyaa-key-info">
+           <div class="info-card primary">
+            <h4>
+             <i data-lucide="eye" style="width:20px;height:20px;margin-right:8px;"></i>
+             First Impression
+            </h4>
+            <p>Sporty, petite, well-groomed, and effortlessly stylish. Her warm personality shines through in her genuine smile and respectful demeanor.</p>
+           </div>
+           <div class="info-card secondary">
+            <h4>
+             <i data-lucide="users" style="width:20px;height:20px;margin-right:8px;"></i>
+             In Person
+            </h4>
+            <p>More affectionate and caring in real life. Prefers direct, warm interactions with clear communication and mutual respect.</p>
+           </div>
+          </div>
+         </div>
+        </div>
+       </details>
+
+       <details class="job-card section-frame yiyaa-accordion-card">
+        <summary class="yiyaa-accordion-summary">
+         <div>
+          <span class="section-kicker">02</span>
+          <h2 class="section-heading job-accent" style="margin-bottom:0;">Do's &amp; Don'ts</h2>
+         </div>
+         <span class="yiyaa-accordion-icon">+</span>
+        </summary>
+        <div class="yiyaa-accordion-content">
+         <div class="yiyaa-dodonts-shell">
+          <div class="yiyaa-dodonts-head">
+           <div class="yiyaa-dodonts-head-copy">
+            <span class="section-kicker">Interaction Guide</span>
+            <h2 class="section-heading job-accent" style="margin-bottom:0.35rem;">Do's &amp; Dont's</h2>
+            <p class="section-lead">A clean guide for online chat and real-life interaction.</p>
+            <p class="yiyaa-dodonts-intro">Biar sama-sama enak, ini basic guide buat social media interaction dan real interaction. Santai aja, tapi please tetap punya manner.</p>
+           </div>
+           <div class="yiyaa-dodonts-meta">
+            <div class="yiyaa-dodonts-meta-item">
+             <span class="yiyaa-dodonts-meta-label">Tone</span>
+             <strong>Warm, clear, respectful</strong>
+            </div>
+            <div class="yiyaa-dodonts-meta-item">
+             <span class="yiyaa-dodonts-meta-label">Priority</span>
+             <strong>Consent, effort, manners</strong>
+            </div>
+           </div>
+          </div>
+          <div class="yiyaa-dodonts-signal-strip">
+           <span class="yiyaa-signal-card">No spam or pressure</span>
+           <span class="yiyaa-signal-card">Respect privacy and consent</span>
+           <span class="yiyaa-signal-card">Show effort and clear intent</span>
+           <span class="yiyaa-signal-card">Stay calm in public</span>
+           <span class="yiyaa-signal-card">No random photos or capture</span>
+           <span class="yiyaa-signal-card">Mutual comfort comes first</span>
+          </div>
+          <div class="yiyaa-dodonts-grid">
+           <article class="yiyaa-dodonts-card yiyaa-dodonts-social">
+            <div class="yiyaa-dodonts-card-head">
+             <span class="mini-label">Online</span>
+             <h3>Chat with clarity</h3>
+             <p>Short, jelas, dan tidak maksa akan jauh lebih mudah dibalas dan bikin obrolan nyaman.</p>
+            </div>
+            <div class="yiyaa-rule-card-list">
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">01</span><p>Jangan spam. I ga nolep, jadi jelas ga tiap jam buka socmed.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">02</span><p>Kalau diread doang atau belum dibalas, jangan ngejar-ngejar terus. Relax a bit.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">03</span><p>Ngetik yang bener dan jelas. Please use your vowels and get to the point.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">04</span><p>Ngomongin apa aja boleh, asal jangan muter terus ke arah yang vulgar atau pointless.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">05</span><p>Jangan kirim foto random atau hal private tanpa izin. Jaga privasi sendiri dengan baik.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">06</span><p>Jangan minta foto atau konten tertentu dengan maksa. Bikin risih dan auto bikin ilfeel.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">07</span><p>Kalau ngajak kenalan, ya sama-sama effort. Jangan nyuruh Yiyaa buka obrolan sendirian.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">08</span><p>Kalau sopan, bakal dibalas baik. Kalau kurang ajar, ya siap-siap ditegur.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">09</span><p>Ask for consent politely kalau mau call. Kalau lagi ga mood, jangan dipaksa.</p></div>
+            </div>
+           </article>
+           <article class="yiyaa-dodonts-card yiyaa-dodonts-real">
+            <div class="yiyaa-dodonts-card-head">
+             <span class="mini-label">Offline</span>
+             <h3>Meet with manners</h3>
+             <p>Penampilan, boundaries, dan cara behave lebih penting daripada trying too hard to impress.</p>
+            </div>
+            <div class="yiyaa-rule-card-list">
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">01</span><p>Manner nomor 1. Rapi, wangi, gentle, dan tau cara behave di public.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">02</span><p>Hindari first meet yang terlalu template. Cafe boleh, tapi jangan itu-itu terus.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">03</span><p>No smoking please, dan jangan ajak ke tempat yang penuh asap rokok.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">04</span><p>Jangan sentuh Yiyaa kecuali memang sudah ada cue yang jelas dan sama-sama nyaman.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">05</span><p>Don't raise your voice in public. Keep the conversation private and calm.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">06</span><p>No camera, no random capture, even cuma ambil barang atau back shot.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">07</span><p>Jangan bahas hal-hal yang terlalu vulgar pas ketemu. Be interesting as a person.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">08</span><p>Kalau telat, expect energy yang sama next time. Kalau on time, itu sangat diapresiasi.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">09</span><p>Kalau ada yang bikin ga nyaman, bilang aja. Win-win solution is always better.</p></div>
+             <div class="yiyaa-rule-card"><span class="yiyaa-rule-index">10</span><p>Wanna try me? Start with respect, not weird behavior.</p></div>
+            </div>
+           </article>
+          </div>
+         </div>
+        </div>
+       </details>
+
+       <details class="job-card section-frame yiyaa-accordion-card">
+        <summary class="yiyaa-accordion-summary">
+         <div>
+          <span class="section-kicker">03</span>
+          <h2 class="section-heading job-accent" style="margin-bottom:0;">Ratecard</h2>
+         </div>
+         <span class="yiyaa-accordion-icon">+</span>
+        </summary>
+        <div class="yiyaa-accordion-content">
+         <div class="yiyaa-rate-info-shell">
+          <div class="yiyaa-rate-info-head">
+           <span class="mini-label">Booking notes</span>
+           <div class="yiyaa-rate-main-title">
+            <i data-lucide="wallet-cards" style="width:16px;height:16px;"></i>
+            <h3><strong>Ratecard &amp; Availability</strong></h3>
+           </div>
+           <p>Firstly, i’d like to tell you guys alasan i keep doing this karena i memang suka intimacy, comfort, dan kedekatan yang mutual. Tapi i juga ga suka dirugikan atau diperlakukan seenaknya, makanya semua arrangement harus jelas dari awal, ada benefit buat dua sisi, dan tetap sesuai boundaries i.</p>
+           <div class="yiyaa-rate-info-head-note">
+            <div class="yiyaa-rate-info-note-title">
+             <i data-lucide="badge-info" style="width:16px;height:16px;"></i>
+             <span class="yiyaa-rate-info-head-label">Core principle</span>
+            </div>
+            <span>Clear arrangement, mutual value, and respected boundaries.</span>
+           </div>
+          </div>
+          <div class="yiyaa-rate-info-grid">
+           <article class="yiyaa-rate-info-card yiyaa-rate-info-open">
+            <div class="yiyaa-rate-info-card-title">
+             <i data-lucide="shield-alert" style="width:16px;height:16px;"></i>
+             <h4><strong>Important Note</strong></h4>
+            </div>
+            <p>Kalau kalian cari orang yang bisa ditawar-tawar seenaknya, ubah rules sesuka hati, atau berharap dapet service bagus dengan effort minimum, sorry banget kalian salah orang. Yiyaa melakukan ini karena suka, jadi servicenya juga passionate dan tidak main-main.</p>
+           </article>
+           <article class="yiyaa-rate-info-card yiyaa-rate-info-close">
+            <div class="yiyaa-rate-info-card-title">
+             <i data-lucide="circle-dollar-sign" style="width:16px;height:16px;"></i>
+             <h4><strong>Rates Policy</strong></h4>
+            </div>
+            <p>Service dengan Yiyaa tidak ada yang murah. Jadi kalau masih pas-pasan, masih hitung-hitungan, atau masih ada mindset mendang-mending, better jangan reach out dulu. Kumpulin dulu, atau cari yang memang sesuai budget kamu.</p>
+           </article>
+           <article class="yiyaa-rate-info-card yiyaa-rate-info-note">
+            <div class="yiyaa-rate-info-card-title">
+             <i data-lucide="file-text" style="width:16px;height:16px;"></i>
+             <h4><strong>Arrangement Note</strong></h4>
+            </div>
+            <p>Yang membedakan client dengan orang lain adalah access, effort, dan consent yang memang sudah dibicarakan dari awal. Di luar itu, jangan expect perlakuan yang sama. Clear arrangement matters.</p>
+          </article>
+          </div>
+          <div class="roadmap yiyaa-booking-roadmap">
+           <div class="roadmap-step">
+            <div class="roadmap-dot">01</div>
+            <div class="roadmap-card yiyaa-booking-step">
+             <div class="yiyaa-booking-step-head">
+              <i data-lucide="sparkles" style="width:16px;height:16px;"></i>
+              <h4><strong>Girlfriend Rent</strong></h4>
+             </div>
+             <p>Minimal siapin sekitar gope. Cocok buat nemenin hangout biar kamu ga ngerasa jomblo sendirian. Tapi hati-hati, jangan sampai malah baper beneran.</p>
+            </div>
+           </div>
+           <div class="roadmap-step">
+            <div class="roadmap-dot">02</div>
+            <div class="roadmap-card yiyaa-booking-step">
+             <div class="yiyaa-booking-step-head">
+              <i data-lucide="heart" style="width:16px;height:16px;"></i>
+              <h4><strong>Cuddle Care &amp; Love Care</strong></h4>
+             </div>
+             <p>Minimal siapin 1 juta untuk cuddle care dan 1,5 juta untuk love care. Formatnya tetap mengikuti batasan Yiyaa, jadi jangan berasumsi lebih dari yang memang sudah dijelaskan di awal.</p>
+            </div>
+           </div>
+           <div class="roadmap-step">
+            <div class="roadmap-dot">03</div>
+            <div class="roadmap-card yiyaa-booking-step">
+             <div class="yiyaa-booking-step-head">
+              <i data-lucide="calendar" style="width:16px;height:16px;"></i>
+              <h4><strong>Longterm Arrangement</strong></h4>
+             </div>
+             <p>Untuk longterm FWB, minimal commit 6 bulan. Semuanya harus dibicarakan dulu: benefit, ekspektasi, bentuk hubungan, dan boundaries. Yiyaa prefer yang longterm, jelas, dan tetap ada value yang sepadan.</p>
+            </div>
+           </div>
+          </div>
+          <div class="yiyaa-rate-manifesto">
+           <article class="yiyaa-rate-manifesto-card yiyaa-rate-manifesto-a">
+            <div class="yiyaa-rate-manifesto-head">
+             <i data-lucide="scale" style="width:16px;height:16px;"></i>
+             <h4><strong>Transactional? Yes, of course</strong></h4>
+            </div>
+            <p>Kalau kamu mau benefit, ya harus siap kasih benefit juga. Jangan expect effort, access, comfort, atau privilege lebih kalau dari awal kamu sendiri ga siap mengimbanginya.</p>
+           </article>
+           <article class="yiyaa-rate-manifesto-card yiyaa-rate-manifesto-b">
+            <div class="yiyaa-rate-manifesto-head">
+             <i data-lucide="check-circle" style="width:16px;height:16px;"></i>
+             <h4><strong>Know your place</strong></h4>
+            </div>
+            <p>Kalau ga mau keluar effort, waktu, atau biaya yang sepadan, ya jangan ngarep banyak. Yiyaa sangat jelas soal value, boundaries, dan apa yang memang layak didapatkan dari sebuah arrangement.</p>
+           </article>
+          </div>
+         </div>
+        </div>
+       </details>
+      </div>
+     </section>
+    </div>
+   </div>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/init.js"></script>
+ </body>
+</html>

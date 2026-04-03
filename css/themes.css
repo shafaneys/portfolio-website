@@ -1,0 +1,3633 @@
+/* Homepage-aligned palette */
+.job-theme,
+.night-theme {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+body.job-page {
+  background: #f8f6ef;
+}
+
+body.night-page {
+  background: #f8f1f5;
+}
+
+/* Job Theme - Blue led with yellow support */
+.job-theme {
+  background: #f8f6ef;
+  color: #243756;
+}
+
+.job-accent {
+  color: #0066ff;
+}
+
+.job-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 2px solid rgba(0, 102, 255, 0.12);
+  transition: all 0.3s;
+  box-shadow: 0 8px 18px rgba(0, 102, 255, 0.05);
+}
+
+.job-card:hover {
+  border-color: rgba(0, 102, 255, 0.24);
+  box-shadow: 0 12px 24px rgba(0, 102, 255, 0.09);
+}
+
+.job-btn {
+  background: #0066ff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.job-btn:hover {
+  background: #0052cc;
+}
+
+.job-tab {
+  border: 1px solid rgba(0, 102, 255, 0.14);
+  background: rgba(0, 102, 255, 0.05);
+  color: #34527d;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.job-tab:hover {
+  border-color: rgba(0, 102, 255, 0.28);
+  background: rgba(0, 102, 255, 0.08);
+  color: #0066ff;
+}
+
+.job-tab.active {
+  background: rgba(0, 102, 255, 0.14);
+  border-color: rgba(0, 102, 255, 0.26);
+  color: #0052cc;
+  box-shadow: none;
+}
+
+.job-theme .info-card,
+.job-theme .timeline-item,
+.job-theme .skill-pill,
+.job-theme .mini-card,
+.job-theme .roadmap-card,
+.job-theme .feature-card,
+.job-theme .pricing-card,
+.job-theme .spotlight-card,
+.job-theme .stat-panel,
+.job-theme .detail-scroll-nav {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(0, 102, 255, 0.1);
+}
+
+.job-theme .detail-scroll-nav {
+  background: rgba(248, 246, 239, 0.82);
+}
+
+.job-theme .detail-scroll-nav-toggle {
+  border-color: rgba(0, 102, 255, 0.14);
+  background: rgba(255, 255, 255, 0.72);
+  color: #34527d;
+}
+
+.job-theme .timeline-role,
+.job-theme .skill-pill,
+.job-theme .section-heading,
+.job-theme .roadmap-dot,
+.job-theme .stat-panel strong {
+  color: #1f3157;
+}
+
+.job-theme .section-kicker,
+.job-theme .mini-label {
+  color: #0066ff;
+}
+
+.job-theme .roadmap-dot {
+  background: rgba(0, 102, 255, 0.12);
+  border: 1px solid rgba(0, 102, 255, 0.18);
+}
+
+.job-theme .timeline-company,
+.job-theme .font-mono,
+.job-theme .timeline-copy,
+.job-theme .bullet-list,
+.job-theme .section-lead,
+.job-theme .roadmap-card p,
+.job-theme .feature-card p,
+.job-theme .spotlight-card p {
+  color: #61728d;
+}
+
+.job-theme .hero-chip,
+.job-theme .metric-chip,
+.job-theme .tag-cloud span,
+.job-theme .pricing-line,
+.job-theme .hero-intro-panel,
+.job-theme .editorial-highlight,
+.job-theme .timeline-rail-item,
+.job-theme .quote-panel,
+.job-theme .service-slice,
+.job-theme .skill-cluster {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(0, 102, 255, 0.1);
+}
+
+.job-theme .highlight-band,
+.job-theme .pricing-spotlight,
+.job-theme .feature-slice {
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(255, 184, 0, 0.13));
+  border: 1px solid rgba(0, 102, 255, 0.14);
+}
+
+.job-theme .hero-intro-panel::after {
+  background: radial-gradient(circle, rgba(0, 102, 255, 0.35), rgba(0, 102, 255, 0));
+}
+
+.job-theme .highlight-band::before {
+  background: linear-gradient(115deg, rgba(0, 102, 255, 0.12), rgba(255, 184, 0, 0.16));
+}
+
+.job-theme .skill-meter-fill {
+  background: linear-gradient(90deg, #0066ff, #ffb800);
+}
+
+.job-theme .featured-project-video {
+  background: #dfe7f3;
+}
+.job-theme .featured-gallery-head h3,
+.job-theme .featured-project-card h4 {
+  margin: 0 0 0.45rem;
+}
+
+.job-theme .featured-gallery-head p,
+.job-theme .featured-project-card p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.job-theme .featured-project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+.job-theme .featured-project-grid-clean {
+  align-items: stretch;
+}
+
+.job-theme .featured-project-card {
+  min-height: 100%;
+  padding: 0.95rem;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(0, 102, 255, 0.1);
+  border-radius: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.job-theme .featured-project-card-video {
+  min-height: 100%;
+  padding: 0.85rem;
+}
+
+.job-theme .featured-media-trigger {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+  text-align: left;
+}
+
+.job-theme .featured-project-video {
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 150px;
+  max-height: 180px;
+  display: block;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 0.35rem 0 0;
+  background: #000000;
+  pointer-events: none;
+}
+
+.job-theme .featured-media-trigger-label {
+  display: inline-flex;
+  margin-top: 0.65rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(0, 102, 255, 0.08);
+  border: 1px solid rgba(0, 102, 255, 0.12);
+  color: #0066ff;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.job-theme .featured-copy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.55rem;
+}
+
+.job-theme .featured-copy-image {
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  max-height: 180px;
+  object-fit: cover;
+  display: block;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 102, 255, 0.08);
+}
+
+.job-theme .featured-gallery-shell {
+  margin-top: 0;
+}
+
+.job-theme .featured-gallery-head {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+.job-theme .featured-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 8px;
+  gap: 1rem;
+}
+
+.job-theme .featured-gallery-card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.4rem;
+  border: 1px solid rgba(0, 102, 255, 0.1);
+  background: rgba(255, 255, 255, 0.78);
+  padding: 0;
+  cursor: zoom-in;
+  appearance: none;
+  width: 100%;
+  margin: 0;
+}
+
+.job-theme .featured-gallery-card.gallery-shape-small {
+  height: 220px;
+}
+
+.job-theme .featured-gallery-card.gallery-shape-medium {
+  height: 300px;
+}
+
+.job-theme .featured-gallery-card.gallery-shape-tall {
+  height: 420px;
+}
+
+.job-theme .featured-gallery-card.gallery-shape-wide {
+  height: 260px;
+}
+
+.job-theme .featured-gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.08);
+  transform-origin: center;
+  transition: transform 0.35s ease;
+}
+
+.job-theme .featured-gallery-card:hover .featured-gallery-image {
+  transform: scale(1.12);
+}
+
+body.job-page .gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(15, 24, 39, 0.84);
+  backdrop-filter: blur(8px);
+}
+
+body.job-page .gallery-lightbox.is-open {
+  display: flex;
+}
+
+body.job-page .gallery-lightbox-image {
+  max-width: min(92vw, 1100px);
+  max-height: 86vh;
+  width: auto;
+  height: auto;
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  display: none;
+}
+
+body.job-page .gallery-lightbox-video {
+  max-width: min(92vw, 1100px);
+  max-height: 86vh;
+  width: auto;
+  height: auto;
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  display: none;
+  background: #000000;
+}
+
+body.job-page .gallery-lightbox-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.yiyaa-ratecard-page .yiyaa-ratecard-shell {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  background:
+    radial-gradient(circle at top right, rgba(255, 184, 0, 0.18), transparent 22%),
+    radial-gradient(circle at left 18%, rgba(0, 102, 255, 0.12), transparent 24%),
+    rgba(255, 255, 255, 0.88);
+}
+
+.yiyaa-ratecard-page .yiyaa-ratecard-shell::before {
+  content: '';
+  position: absolute;
+  inset: 1rem;
+  border: 1px dashed rgba(0, 102, 255, 0.14);
+  border-radius: 1.25rem 2rem 1.4rem 1.8rem;
+  pointer-events: none;
+}
+
+.yiyaa-ratecard-page .yiyaa-pricing-showcase {
+  align-items: stretch;
+}
+
+.yiyaa-ratecard-page .yiyaa-hero-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  padding: 2rem 1.8rem;
+  border-radius: 2.5rem 1.5rem 2.2rem 1.8rem;
+  background:
+    linear-gradient(135deg, rgba(0, 102, 255, 0.12), rgba(255, 184, 0, 0.08)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98));
+  box-shadow:
+    0 20px 40px rgba(0, 102, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 102, 255, 0.08);
+}
+
+.yiyaa-ratecard-page .yiyaa-hero-card::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: -60px;
+  top: -60px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 102, 255, 0.08), transparent 70%);
+  animation: float 6s ease-in-out infinite;
+}
+
+.yiyaa-ratecard-page .yiyaa-hero-card::after {
+  content: '';
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  width: 120px;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #0066ff, #ffb800, #ff6b9d);
+  opacity: 0.7;
+  filter: blur(1px);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+.yiyaa-ratecard-page .yiyaa-hero-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.yiyaa-ratecard-page .yiyaa-story-roadmap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.yiyaa-ratecard-page .yiyaa-story-roadmap::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg,
+    rgba(0, 102, 255, 0.3),
+    rgba(255, 184, 0, 0.4),
+    rgba(255, 107, 157, 0.3)
+  );
+  border-radius: 2px;
+}
+
+.yiyaa-ratecard-page .yiyaa-story-step {
+  position: relative;
+  margin-left: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-story-step::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0066ff, #ffb800);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.1);
+  z-index: 2;
+}
+
+.yiyaa-ratecard-page .yiyaa-mini-card {
+  position: relative;
+  flex: 1;
+  min-height: auto;
+  padding: 1.5rem 1.8rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(0, 102, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 102, 255, 0.06);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.yiyaa-ratecard-page .yiyaa-mini-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 102, 255, 0.12);
+}
+
+.yiyaa-ratecard-page .yiyaa-mini-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #0066ff, #ffb800, #ff6b9d);
+  opacity: 0.8;
+}
+
+.yiyaa-ratecard-page .yiyaa-mini-card-a::before {
+  background: linear-gradient(90deg, #0066ff, #7db4ff);
+}
+
+.yiyaa-ratecard-page .yiyaa-mini-card-b::before {
+  background: linear-gradient(90deg, #ffb800, #ffe28a);
+}
+
+.yiyaa-ratecard-page .yiyaa-mini-card-c::before {
+  background: linear-gradient(90deg, #ff6b9d, #ffb3d9);
+}
+
+.yiyaa-ratecard-page .yiyaa-mini-card-d::before {
+  background: linear-gradient(90deg, #9c27b0, #e1bee7);
+}
+
+.yiyaa-ratecard-page .yiyaa-service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.yiyaa-ratecard-page .yiyaa-service-grid .yiyaa-physical-card {
+  grid-column: 1 / -1;
+}
+
+.yiyaa-ratecard-page .yiyaa-physical-card {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 2.5rem;
+  border-radius: 2.5rem 1.5rem 2.2rem 1.8rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98)),
+    linear-gradient(180deg, rgba(0, 102, 255, 0.02), rgba(255, 184, 0, 0.01));
+  border: 1px solid rgba(0, 102, 255, 0.08);
+  box-shadow:
+    0 16px 32px rgba(0, 102, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.yiyaa-ratecard-page .yiyaa-physical-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 24px 48px rgba(0, 102, 255, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.yiyaa-ratecard-page .yiyaa-physical-card::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 102, 255, 0.06), transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.yiyaa-ratecard-page .yiyaa-physical-card::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 184, 0, 0.08), transparent 70%);
+  animation: pulse 4s ease-in-out infinite reverse;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.yiyaa-ratecard-page .yiyaa-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-spec-chip {
+  position: relative;
+  padding: 1.2rem 1rem;
+  border-radius: 1.2rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(0, 102, 255, 0.08);
+  box-shadow:
+    0 4px 12px rgba(0, 102, 255, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.yiyaa-ratecard-page .yiyaa-spec-chip:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 20px rgba(0, 102, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.yiyaa-ratecard-page .yiyaa-spec-chip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #0066ff, #ffb800, #ff6b9d);
+  opacity: 0.7;
+}
+
+.yiyaa-ratecard-page .yiyaa-spec-chip span {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0066ff;
+  font-weight: 600;
+}
+
+.yiyaa-ratecard-page .yiyaa-spec-chip strong {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #243756;
+}
+  color: #243756;
+}
+
+.yiyaa-ratecard-page .yiyaa-preference-card {
+  position: relative;
+  padding: 2rem 1.8rem;
+  border-radius: 2rem 1.5rem 2.5rem 1.2rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98)),
+    linear-gradient(180deg, rgba(255, 184, 0, 0.04), rgba(255, 184, 0, 0.02));
+  border: 1px solid rgba(255, 184, 0, 0.12);
+  box-shadow:
+    0 12px 24px rgba(255, 184, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.yiyaa-ratecard-page .yiyaa-preference-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 20px 40px rgba(255, 184, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.yiyaa-ratecard-page .yiyaa-preference-card::before {
+  content: '💝';
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  opacity: 0.6;
+  animation: bounce 3s ease-in-out infinite;
+}
+
+.yiyaa-ratecard-page .yiyaa-lifestyle-card {
+  position: relative;
+  padding: 2rem 1.8rem;
+  border-radius: 1.8rem 2.2rem 1.5rem 2rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98)),
+    linear-gradient(180deg, rgba(0, 102, 255, 0.03), rgba(255, 107, 157, 0.02));
+  border: 1px solid rgba(255, 107, 157, 0.12);
+  box-shadow:
+    0 12px 24px rgba(255, 107, 157, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.yiyaa-ratecard-page .yiyaa-lifestyle-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 20px 40px rgba(255, 107, 157, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.yiyaa-ratecard-page .yiyaa-lifestyle-card::before {
+  content: '🏃‍♀️';
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  opacity: 0.6;
+  animation: bounce 3s ease-in-out infinite 0.5s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-4px); }
+  60% { transform: translateY(-2px); }
+}
+    rgba(255, 255, 255, 0.95);
+  border-radius: 1rem 2rem 1rem 2rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-lifestyle-card::before {
+  content: '';
+  position: absolute;
+  inset: auto auto 1rem 1rem;
+  width: 52px;
+  height: 8px;
+  border-radius: 999px;
+  background: #0066ff;
+  opacity: 0.25;
+}
+
+.yiyaa-ratecard-page .yiyaa-editorial-grid {
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: stretch;
+}
+
+.yiyaa-ratecard-page .yiyaa-service-grid .service-slice,
+.yiyaa-ratecard-page .yiyaa-editorial-grid .quote-panel,
+.yiyaa-ratecard-page .yiyaa-editorial-grid .timeline-rail-item {
+  min-height: 0;
+  height: 100%;
+}
+
+.yiyaa-ratecard-page .yiyaa-timeline-rail {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.yiyaa-ratecard-page .yiyaa-meet-card {
+  position: relative;
+  overflow: hidden;
+  padding: 2.5rem 2rem;
+  border-radius: 2.5rem 1.5rem 2rem 1.8rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98)),
+    linear-gradient(180deg, rgba(255, 184, 0, 0.03), rgba(255, 107, 157, 0.02));
+  border: 1px solid rgba(255, 184, 0, 0.08);
+  box-shadow:
+    0 16px 32px rgba(255, 184, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.yiyaa-ratecard-page .yiyaa-meet-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 24px 48px rgba(255, 184, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.yiyaa-ratecard-page .yiyaa-meet-card .quote-mark {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 4rem;
+  opacity: 0.1;
+  color: #0066ff;
+  z-index: 0;
+}
+
+.yiyaa-ratecard-page .yiyaa-meet-card h3,
+.yiyaa-ratecard-page .yiyaa-meet-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.yiyaa-ratecard-page .yiyaa-meet-card::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 184, 0, 0.08), transparent 70%);
+  animation: float 5s ease-in-out infinite;
+}
+
+.yiyaa-ratecard-page .yiyaa-timeline-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-boundary-card {
+  position: relative;
+  padding: 2rem 1.8rem;
+  border-radius: 2rem 1.5rem 2.2rem 1.2rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(0, 102, 255, 0.08);
+  box-shadow:
+    0 12px 24px rgba(0, 102, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.yiyaa-ratecard-page .yiyaa-boundary-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 20px 40px rgba(0, 102, 255, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.yiyaa-ratecard-page .yiyaa-boundary-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #0066ff, #ffb800);
+}
+
+.yiyaa-ratecard-page .yiyaa-boundary-soft::before {
+  background: linear-gradient(90deg, #0066ff, #7db4ff);
+}
+
+.yiyaa-ratecard-page .yiyaa-boundary-firm::before {
+  background: linear-gradient(90deg, #ffb800, #ffe28a);
+}
+
+.yiyaa-ratecard-page .yiyaa-mood-mosaic {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr 0.85fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-mood-card {
+  position: relative;
+  overflow: hidden;
+  padding: 1.2rem 1.25rem;
+  min-height: 100%;
+  border: 1px solid rgba(0, 102, 255, 0.1);
+}
+
+.yiyaa-ratecard-page .yiyaa-mood-card h3 {
+  margin: 0 0 0.45rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-mood-card p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.yiyaa-ratecard-page .yiyaa-mood-card-a {
+  border-radius: 2rem 1rem 1.6rem 1.2rem;
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.09), rgba(255, 255, 255, 0.98));
+}
+
+.yiyaa-ratecard-page .yiyaa-mood-card-b {
+  border-radius: 1rem 1.9rem 1rem 1.55rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 184, 0, 0.08));
+}
+
+.yiyaa-ratecard-page .yiyaa-mood-card-c {
+  border-radius: 1.45rem;
+  background:
+    radial-gradient(circle at top right, rgba(0, 102, 255, 0.08), transparent 35%),
+    rgba(255, 255, 255, 0.98);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-shell {
+  display: grid;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  background:
+    radial-gradient(circle at top right, rgba(255, 184, 0, 0.16), transparent 20%),
+    radial-gradient(circle at left 20%, rgba(0, 102, 255, 0.08), transparent 22%),
+    rgba(255, 255, 255, 0.88);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-shell::before {
+  content: '';
+  position: absolute;
+  inset: 1rem;
+  border: 1px dashed rgba(0, 102, 255, 0.14);
+  border-radius: 1.3rem 1.9rem 1.45rem 1.7rem;
+  pointer-events: none;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-shell > * {
+  position: relative;
+  z-index: 1;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-signal-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-signal-card {
+  padding: 0.95rem 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(0, 102, 255, 0.1);
+  font-family: 'Space Mono', monospace;
+}
+
+.yiyaa-ratecard-page .yiyaa-signal-card strong,
+.yiyaa-ratecard-page .yiyaa-signal-card span {
+  display: block;
+}
+
+.yiyaa-ratecard-page .yiyaa-signal-card strong {
+  margin-bottom: 0.35rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.yiyaa-ratecard-page .yiyaa-signal-card span {
+  font-size: 0.72rem;
+  line-height: 1.55;
+}
+
+.yiyaa-ratecard-page .yiyaa-signal-blue {
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.08), rgba(255, 255, 255, 0.96));
+}
+
+.yiyaa-ratecard-page .yiyaa-signal-gold {
+  background: linear-gradient(135deg, rgba(255, 184, 0, 0.12), rgba(255, 255, 255, 0.96));
+}
+
+.yiyaa-ratecard-page .yiyaa-signal-plain {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-head {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 1rem;
+  align-items: end;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-head > div {
+  padding: 1.25rem 1.35rem;
+  border-radius: 1.9rem 1.1rem 1.6rem 1.2rem;
+  background:
+    linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(255, 255, 255, 0.96)),
+    rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0, 102, 255, 0.12);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-intro {
+  margin: 0;
+  padding: 1.1rem 1.2rem;
+  border-radius: 1.2rem 1.7rem 1.2rem 1.5rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(255, 184, 0, 0.08)),
+    rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 184, 0, 0.14);
+  line-height: 1.7;
+  color: #61728d;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-head h2 {
+  margin: 0;
+  font-size: 1.13rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-head .section-kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: #0066ff;
+  opacity: 0.9;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-card {
+  position: relative;
+  overflow: visible;
+  padding: 1.25rem;
+  min-height: 100%;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(0, 102, 255, 0.14);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 26px rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 102, 255, 0.2);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-social {
+  border-radius: 2rem 1.1rem 1.5rem 1.2rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(0, 102, 255, 0.05));
+  border: 1px solid rgba(0, 102, 255, 0.12);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-social::after {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px dashed rgba(0, 102, 255, 0.2);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-real {
+  border-radius: 1.2rem 2rem 1.2rem 1.8rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 184, 0, 0.08));
+  border: 1px solid rgba(255, 184, 0, 0.18);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-real::after {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  width: 72px;
+  height: 9px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ffb800, #0066ff);
+  opacity: 0.7;
+}
+
+.yiyaa-ratecard-page .yiyaa-rule-card-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-rule-card {
+  position: relative;
+  padding: 0.9rem 1rem 0.9rem 1.15rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(0, 102, 255, 0.08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+.yiyaa-ratecard-page .yiyaa-rule-card::before {
+  content: '';
+  position: absolute;
+  left: 0.65rem;
+  top: 1rem;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 50%;
+  background: #0066ff;
+  opacity: 0.75;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-real .yiyaa-rule-card {
+  border-color: rgba(255, 184, 0, 0.14);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-real .yiyaa-rule-card::before {
+  background: #ffb800;
+}
+
+.yiyaa-ratecard-page .yiyaa-rule-card p {
+  margin: 0;
+  line-height: 1.58;
+  color: #33455c;
+  font-size: 0.94rem;
+}
+
+/* New modern compact style for Do's & Don'ts */
+.yiyaa-ratecard-page .yiyaa-dodonts-shell {
+  position: relative;
+  display: grid;
+  gap: 0.85rem;
+  padding: 0.95rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 102, 255, 0.14);
+  border-radius: 1.5rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-shell:hover {
+  box-shadow: 0 20px 36px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-signal-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-signal-card {
+  position: relative;
+  padding: 0.62rem 0.72rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 102, 255, 0.1);
+  background: rgba(241, 248, 255, 0.87);
+  box-shadow: inset 0 0.4rem 0.85rem rgba(0, 102, 255, 0.03);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-head {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 0.65rem;
+  align-items: start;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-head > div {
+  padding: 0.9rem 0.95rem;
+  border-radius: 1.15rem;
+  border: 1px solid rgba(0, 102, 255, 0.12);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-head .section-kicker {
+  color: #0066ff;
+  font-size: 0.70rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-head .section-lead,
+.yiyaa-ratecard-page .yiyaa-dodonts-head h2 {
+  margin: 0;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-intro {
+  margin: 0;
+  border-radius: 1rem;
+  background: rgba(246, 251, 255, 0.88);
+  border: 1px dashed rgba(0, 102, 255, 0.18);
+  padding: 0.6rem 0.75rem;
+  color: #4e6a88;
+  line-height: 1.55;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-card {
+  border-radius: 1.2rem;
+  border: 1px solid rgba(0, 102, 255, 0.12);
+  background: #ffffff;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.04);
+  padding: 0.95rem 0.95rem 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-rule-card-list {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-rule-card {
+  position: relative;
+  padding: 0.65rem 0.8rem 0.6rem 1rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(0, 102, 255, 0.10);
+  background: rgba(249, 252, 255, 0.94);
+  box-shadow: inset 0 0.9px 0.9px rgba(255, 255, 255, 0.8);
+}
+
+.yiyaa-ratecard-page .yiyaa-rule-card::before {
+  left: 0.55rem;
+  top: 0.85rem;
+  width: 0.34rem;
+  height: 0.34rem;
+  background: #0066ff;
+}
+
+.yiyaa-ratecard-page .yiyaa-dodonts-real .yiyaa-rule-card::before {
+  background: #ffb800;
+}
+
+@media (max-width: 900px) {
+  .yiyaa-ratecard-page .yiyaa-dodonts-grid,
+  .yiyaa-ratecard-page .yiyaa-dodonts-head,
+  .yiyaa-ratecard-page .yiyaa-dodonts-signal-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-signal-strip {
+    gap: 0.6rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-card {
+    padding: 0.9rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-rule-card p {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .yiyaa-ratecard-page .yiyaa-dodonts-shell {
+    padding: 0.6rem;
+    gap: 0.6rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-card {
+    padding: 0.75rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-rule-card {
+    padding: 0.53rem 0.72rem 0.5rem 0.9rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-signal-strip,
+  .yiyaa-ratecard-page .yiyaa-dodonts-head,
+  .yiyaa-ratecard-page .yiyaa-dodonts-grid {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+  }
+}
+
+.yiyaa-ratecard-page .yiyaa-accordion-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-accordion-card {
+  overflow: hidden;
+}
+
+.yiyaa-ratecard-page .yiyaa-accordion-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.yiyaa-ratecard-page .yiyaa-accordion-summary::-webkit-details-marker {
+  display: none;
+}
+
+.yiyaa-ratecard-page .yiyaa-accordion-summary .section-kicker {
+  margin-bottom: 0.45rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-accordion-icon {
+  flex: 0 0 auto;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: #0066ff;
+  background: rgba(0, 102, 255, 0.08);
+  border: 1px solid rgba(0, 102, 255, 0.14);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.yiyaa-ratecard-page .yiyaa-accordion-card[open] .yiyaa-accordion-icon {
+  transform: rotate(45deg);
+  background: rgba(255, 184, 0, 0.12);
+}
+
+.yiyaa-ratecard-page .yiyaa-accordion-content {
+  margin-top: 1.15rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(0, 102, 255, 0.1);
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-head {
+  padding: 1.3rem 1.35rem;
+  border-radius: 1.9rem 1.15rem 1.6rem 1.25rem;
+  background:
+    linear-gradient(135deg, rgba(0, 102, 255, 0.08), rgba(255, 184, 0, 0.1)),
+    rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(0, 102, 255, 0.12);
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-head h3,
+.yiyaa-ratecard-page .yiyaa-rate-info-card h4 {
+  margin: 0 0 0.45rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-head p,
+.yiyaa-ratecard-page .yiyaa-rate-info-card p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-card {
+  padding: 1.15rem 1.2rem;
+  border: 1px solid rgba(0, 102, 255, 0.1);
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 102, 255, 0.12);
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-card::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-card h4,
+.yiyaa-ratecard-page .yiyaa-rate-info-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-open h4::after {
+  content: '💡';
+  margin-left: 0.5rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-close h4::after {
+  content: '⚠️';
+  margin-left: 0.5rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-note h4::after {
+  content: '📝';
+  margin-left: 0.5rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-open {
+  border-radius: 1.8rem 1rem 1.4rem 1.2rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(0, 102, 255, 0.05));
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-open::before {
+  background: #0066ff;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-close {
+  border-radius: 1.1rem 1.9rem 1.15rem 1.55rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 184, 0, 0.08));
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-close::before {
+  background: #ffb800;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-note {
+  border-radius: 1.5rem;
+  background:
+    radial-gradient(circle at bottom right, rgba(0, 102, 255, 0.1), transparent 42%),
+    rgba(255, 255, 255, 0.98);
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-info-note::before {
+  background: #ff1493;
+}
+
+.yiyaa-ratecard-page .yiyaa-booking-roadmap {
+  margin-top: 1rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-booking-step {
+  border-radius: 1.2rem 1.7rem 1.2rem 1.45rem;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(0, 102, 255, 0.1);
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-manifesto {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-manifesto-card {
+  padding: 1.15rem 1.2rem;
+  min-height: 100%;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-manifesto-card h4 {
+  margin: 0 0 0.45rem;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-manifesto-card p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-manifesto-a {
+  border-radius: 1.8rem 1rem 1.45rem 1.2rem;
+  background: linear-gradient(135deg, rgba(255, 184, 0, 0.12), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(255, 184, 0, 0.18);
+}
+
+.yiyaa-ratecard-page .yiyaa-rate-manifesto-b {
+  border-radius: 1rem 1.8rem 1rem 1.5rem;
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.08), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(0, 102, 255, 0.12);
+}
+
+@media (max-width: 1024px) {
+  .job-theme .featured-gallery-head,
+  .job-theme .featured-copy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-theme .featured-project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .job-theme .featured-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .job-theme .featured-gallery-card.gallery-shape-small {
+    height: 200px;
+  }
+
+  .job-theme .featured-gallery-card.gallery-shape-medium {
+    height: 260px;
+  }
+
+  .job-theme .featured-gallery-card.gallery-shape-tall {
+    height: 340px;
+  }
+
+  .job-theme .featured-gallery-card.gallery-shape-wide {
+    height: 220px;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-story-roadmap,
+  .yiyaa-ratecard-page .yiyaa-spec-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-rate-info-grid,
+  .yiyaa-ratecard-page .yiyaa-dodonts-signal-strip,
+  .yiyaa-ratecard-page .yiyaa-mood-mosaic,
+  .yiyaa-ratecard-page .yiyaa-rate-manifesto {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-service-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-service-grid .yiyaa-physical-card {
+    grid-column: 1;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-physical-card,
+  .yiyaa-ratecard-page .yiyaa-preference-card,
+  .yiyaa-ratecard-page .yiyaa-lifestyle-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-hero-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-story-roadmap {
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-story-step {
+    gap: 1rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-mini-card {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-meet-card,
+  .yiyaa-ratecard-page .yiyaa-boundary-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-meet-card .quote-mark {
+    font-size: 3rem;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-spec-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-spec-chip {
+    padding: 0.9rem 0.8rem;
+  }
+}
+
+  .yiyaa-ratecard-page .yiyaa-timeline-rail {
+    grid-template-rows: auto;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-story-roadmap::before {
+    display: none;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-story-step {
+    margin-left: 0;
+  }
+
+  .night-theme .night-physical-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .job-theme .featured-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-card {
+    border: 1px solid rgba(0, 102, 255, 0.18);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+    padding: 1.1rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-rule-card {
+    padding: 0.7rem 0.85rem;
+    border-radius: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-rule-card::before {
+    left: 0.5rem;
+    top: 0.95rem;
+    width: 0.32rem;
+    height: 0.32rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-signal-strip,
+  .yiyaa-ratecard-page .yiyaa-dodonts-head {
+    grid-template-columns: 1fr;
+  }
+
+  .job-theme .featured-gallery-card.gallery-shape-small,
+  .job-theme .featured-gallery-card.gallery-shape-medium,
+  .job-theme .featured-gallery-card.gallery-shape-tall,
+  .job-theme .featured-gallery-card.gallery-shape-wide {
+    height: auto;
+  }
+
+  .job-theme .featured-project-grid,
+  .job-theme .featured-copy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-theme .featured-project-video {
+    min-height: 170px;
+    max-height: 200px;
+  }
+
+  .night-theme .night-physical-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-ratecard-shell::before {
+    inset: 0.7rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-shell::before {
+    inset: 0.7rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-shell {
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-signal-strip {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-head {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-grid {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-card {
+    padding: 1rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-rule-card {
+    padding: 0.75rem 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-rule-card p {
+    line-height: 1.55;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-dodonts-intro {
+    padding: 0.95rem 1rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-signal-card {
+    padding: 0.75rem 0.8rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-rate-manifesto {
+    grid-template-columns: 1fr;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-rate-manifesto-card {
+    padding: 0.9rem 0.95rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-mini-card-a,
+  .yiyaa-ratecard-page .yiyaa-mini-card-b,
+  .yiyaa-ratecard-page .yiyaa-mini-card-c,
+  .yiyaa-ratecard-page .yiyaa-mini-card-d {
+    transform: none;
+    clip-path: none;
+  }
+
+  /* Mobile spacing optimizations */
+  .yiyaa-ratecard-page .detail-topbar {
+    margin-bottom: 1rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-accordion-content {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-character-showcase {
+    gap: 1.5rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-booking-roadmap {
+    margin-top: 0.75rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-rate-manifesto {
+    margin-top: 0.75rem;
+    gap: 0.75rem;
+  }
+}
+
+/* Night Theme - Pink led with yellow support */
+.night-theme {
+  background: #f8f1f5;
+  color: #5d3457;
+}
+
+.night-accent {
+  color: #ff1493;
+}
+
+.night-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 2px solid rgba(255, 20, 147, 0.12);
+  transition: all 0.3s;
+  box-shadow: 0 8px 18px rgba(255, 20, 147, 0.05);
+}
+
+.night-card:hover {
+  border-color: rgba(255, 20, 147, 0.24);
+  box-shadow: 0 12px 24px rgba(255, 20, 147, 0.09);
+}
+
+.night-btn {
+  background: #ff1493;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.night-btn:hover {
+  background: #e2007d;
+}
+
+.night-tab {
+  border: 1px solid rgba(255, 20, 147, 0.14);
+  background: rgba(255, 20, 147, 0.05);
+  color: #8a617f;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.night-tab:hover {
+  border-color: rgba(255, 20, 147, 0.28);
+  background: rgba(255, 20, 147, 0.08);
+  color: #ff1493;
+}
+
+.night-tab.active {
+  background: rgba(255, 20, 147, 0.14);
+  border-color: rgba(255, 20, 147, 0.24);
+  color: #d10074;
+  box-shadow: none;
+}
+
+.night-theme .info-card,
+.night-theme .timeline-item,
+.night-theme .skill-pill,
+.night-theme .mini-card,
+.night-theme .roadmap-card,
+.night-theme .feature-card,
+.night-theme .pricing-card,
+.night-theme .spotlight-card,
+.night-theme .stat-panel,
+.night-theme .detail-scroll-nav {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 20, 147, 0.1);
+}
+
+.night-theme .detail-scroll-nav {
+  background: rgba(248, 241, 245, 0.84);
+}
+
+@media (max-width: 768px) {
+  .night-theme .detail-scroll-nav {
+    background: rgba(248, 241, 245, 0.92);
+    border-radius: 1rem;
+  }
+
+  .night-theme .night-tab {
+    border-radius: 0.85rem;
+  }
+}
+
+.night-theme .detail-scroll-nav-toggle {
+  border-color: rgba(255, 20, 147, 0.14);
+  background: rgba(255, 255, 255, 0.72);
+  color: #8a617f;
+}
+
+.night-theme .timeline-role,
+.night-theme .skill-pill,
+.night-theme .section-heading,
+.night-theme .roadmap-dot,
+.night-theme .stat-panel strong {
+  color: #612c58;
+}
+
+.night-theme .section-kicker,
+.night-theme .mini-label {
+  color: #ff1493;
+}
+
+.night-theme .roadmap-dot {
+  background: rgba(255, 20, 147, 0.12);
+  border: 1px solid rgba(255, 20, 147, 0.18);
+}
+
+.night-theme .timeline-company,
+.night-theme .font-mono,
+.night-theme .timeline-copy,
+.night-theme .bullet-list,
+.night-theme .section-lead,
+.night-theme .roadmap-card p,
+.night-theme .feature-card p,
+.night-theme .spotlight-card p {
+  color: #906b87;
+}
+
+.night-theme .hero-chip,
+.night-theme .metric-chip,
+.night-theme .tag-cloud span,
+.night-theme .pricing-line,
+.night-theme .hero-intro-panel,
+.night-theme .editorial-highlight,
+.night-theme .timeline-rail-item,
+.night-theme .quote-panel,
+.night-theme .service-slice,
+.night-theme .skill-cluster {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 20, 147, 0.1);
+}
+
+.night-theme .highlight-band,
+.night-theme .pricing-spotlight,
+.night-theme .feature-slice {
+  background: linear-gradient(135deg, rgba(255, 20, 147, 0.1), rgba(255, 184, 0, 0.14));
+  border: 1px solid rgba(255, 20, 147, 0.14);
+}
+
+.night-theme .hero-intro-panel::after {
+  background: radial-gradient(circle, rgba(255, 20, 147, 0.35), rgba(255, 20, 147, 0));
+}
+
+.night-theme .night-book-card {
+  display: grid;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 1.45rem;
+  background: linear-gradient(135deg, rgba(255, 245, 250, 0.95), rgba(255, 249, 229, 0.9));
+  border: 1px solid rgba(255, 20, 147, 0.12);
+}
+
+.night-theme .night-profile-joblike {
+  display: grid;
+  gap: 0.85rem;
+  padding: 0.95rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 20, 147, 0.14);
+  border-radius: 1.5rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.3s ease;
+}
+
+.night-theme .night-profile-joblike:hover {
+  box-shadow: 0 20px 36px rgba(0, 0, 0, 0.12);
+}
+
+.night-theme .night-profile-joblike .yiyaa-profile-hero {
+  display: flex;
+  align-items: center;
+  gap: 0.95rem;
+  padding: 0.9rem 0.95rem;
+  border-radius: 1.15rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 20, 147, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.night-theme .night-profile-joblike .profile-avatar {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.night-theme .night-profile-joblike .profile-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.22rem 0.65rem;
+  margin-bottom: 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(255, 20, 147, 0.08);
+  color: #ff1493;
+  border: 1px solid rgba(255, 20, 147, 0.15);
+}
+
+.night-theme .night-profile-joblike .profile-info {
+  flex: 1;
+}
+
+.night-theme .night-profile-joblike .profile-info h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #3f2a3a;
+}
+
+.night-theme .night-profile-joblike .profile-info p {
+  margin: 0;
+  color: #8a617f;
+  line-height: 1.55;
+  font-size: 0.94rem;
+}
+
+.night-theme .night-profile-joblike .yiyaa-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.65rem;
+  align-items: start;
+}
+
+.night-theme .night-profile-joblike .stat-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  min-height: 78px;
+  height: 78px;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 20, 147, 0.1);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.night-theme .night-profile-joblike .stat-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
+}
+
+.night-theme .night-profile-joblike .stat-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  color: #ff1493;
+  background: rgba(255, 20, 147, 0.08);
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255, 20, 147, 0.12);
+}
+
+.night-theme .night-profile-joblike .stat-label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8a617f;
+}
+
+.night-theme .night-profile-joblike .stat-value {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #3f2a3a;
+  line-height: 1.35;
+  max-height: 2.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.night-theme .night-profile-joblike .stat-content {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.night-theme .night-profile-joblike .yiyaa-traits-section {
+  display: block;
+  padding: 0.95rem 0.95rem 1rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 20, 147, 0.12);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.045);
+}
+
+.night-theme .night-profile-joblike .yiyaa-traits-section h4 {
+  margin: 0 0 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3f2a3a;
+}
+
+.night-theme .night-profile-joblike .traits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+.night-theme .night-profile-joblike .trait-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  background: rgba(255, 20, 147, 0.08);
+  color: #ff1493;
+  border: 1px solid rgba(255, 20, 147, 0.15);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.night-theme .night-profile-joblike .trait-tag:hover {
+  transform: scale(1.05);
+  background: rgba(255, 20, 147, 0.12);
+}
+
+.night-theme .night-profile-joblike .yiyaa-lifestyle-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+}
+
+.night-theme .night-profile-joblike .highlight-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 0.95rem 0.95rem 1rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 20, 147, 0.12);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.045);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.night-theme .night-profile-joblike .highlight-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 27px rgba(0, 0, 0, 0.1);
+}
+
+.night-theme .night-profile-joblike .highlight-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  flex-shrink: 0;
+  color: #ff1493;
+  background: rgba(255, 20, 147, 0.08);
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255, 20, 147, 0.12);
+}
+
+.night-theme .night-profile-joblike .highlight-content h5 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3f2a3a;
+}
+
+.night-theme .night-profile-joblike .highlight-content p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #8a617f;
+  line-height: 1.55;
+}
+
+.night-theme .night-profile-joblike .yiyaa-traits-section h4 {
+  margin: 0 0 0.8rem;
+  font-size: 1.05rem;
+}
+
+.night-theme .night-profile-joblike .traits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.night-theme .night-profile-joblike .trait-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.48rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 20, 147, 0.1);
+  color: #3f2a3a;
+}
+
+.night-theme .night-profile-joblike .yiyaa-lifestyle-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.night-theme .night-profile-joblike .highlight-card {
+  align-items: flex-start;
+  padding: 1.15rem;
+  border-radius: 1.25rem;
+}
+
+.night-theme .night-profile-joblike .highlight-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.night-theme .night-profile-joblike .highlight-content h5 {
+  margin: 0 0 0.35rem;
+  font-size: 0.98rem;
+}
+
+.night-theme .night-profile-joblike .highlight-content p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.night-theme .night-profile-joblike .yiyaa-key-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.night-theme .night-profile-joblike .info-card {
+  display: block;
+  padding: 1.25rem;
+  border-radius: 1.35rem;
+}
+
+.night-theme .night-profile-joblike .info-card h4 {
+  margin: 0 0 0.7rem;
+  font-size: 1rem;
+}
+
+.night-theme .night-profile-joblike .info-card p {
+  margin: 0;
+  line-height: 1.58;
+}
+
+.night-theme .night-profile-joblike .info-card.primary {
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,248,239,0.9));
+}
+
+.night-theme .night-profile-joblike .info-card.secondary {
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,245,249,0.9));
+}
+
+.night-theme .night-profile-bottom-card {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem 1.05rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,246,250,0.92));
+  border: 1px solid rgba(255, 20, 147, 0.12);
+}
+
+.night-theme .night-profile-bottom-card .night-book-copy p {
+  margin: 0;
+  color: #8a617f;
+  line-height: 1.55;
+}
+
+.night-theme .night-book-card-wide {
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.night-theme .split-hero {
+  grid-template-columns: minmax(0, 1.28fr) minmax(280px, 0.72fr);
+  gap: 0.95rem;
+  align-items: start;
+}
+
+.night-theme .night-profile-shell {
+  padding: 1rem;
+  border-radius: 1.9rem;
+}
+
+.night-theme .night-profile-main,
+.night-theme .profile-side {
+  min-width: 0;
+}
+
+.night-theme .night-profile-main {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.night-theme .night-profile-head {
+  display: block;
+}
+
+.night-theme .night-profile-intro {
+  display: grid;
+  gap: 0.65rem;
+  padding: 0.95rem 1rem;
+  border-radius: 1.35rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(255, 246, 250, 0.92));
+  border: 1px solid rgba(255, 20, 147, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+.night-theme .night-profile-title-block {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.night-theme .night-profile-tagline {
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #ff1493;
+}
+
+.night-theme .night-profile-bio {
+  max-width: 62ch;
+}
+
+.night-theme .night-profile-focus {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 1rem;
+  background: rgba(255, 248, 239, 0.72);
+  border: 1px solid rgba(255, 184, 0, 0.14);
+}
+
+.night-theme .night-profile-focus p {
+  margin: 0;
+  color: #8a617f;
+  line-height: 1.6;
+}
+
+.night-theme .night-profile-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.night-theme .night-profile-points span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.7rem;
+  border-radius: 999px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a617f;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 20, 147, 0.12);
+}
+
+.night-theme .night-profile-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 0.75rem;
+}
+
+.night-theme .night-profile-panel {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.85rem 0.95rem;
+  border-radius: 1.1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 20, 147, 0.1);
+}
+
+.night-theme .night-profile-panel-story {
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  height: 100%;
+}
+
+.night-theme .night-profile-story-block {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.night-theme .night-profile-panel-book {
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.night-theme .night-profile-fact-list {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.night-theme .night-profile-fact {
+  display: grid;
+  gap: 0.22rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid rgba(255, 20, 147, 0.1);
+}
+
+.night-theme .night-profile-fact:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.night-theme .night-profile-fact p {
+  margin: 0;
+  color: #8a617f;
+  line-height: 1.55;
+}
+
+.night-theme .profile-side {
+  align-self: stretch;
+}
+
+.night-theme .night-profile-side {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0.95rem;
+  border-radius: 1.2rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(251, 244, 247, 0.94));
+  border: 1px solid rgba(255, 20, 147, 0.12);
+  box-shadow: 0 18px 38px rgba(125, 76, 100, 0.08);
+}
+
+.night-theme .night-profile-side-head {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.night-theme .night-profile-side .section-heading {
+  margin-bottom: 0;
+  font-size: 1.08rem;
+}
+
+.night-theme .night-profile-side .section-lead {
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.night-theme .night-physical-grid {
+  gap: 0.45rem;
+}
+
+.night-theme .night-book-copy {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.night-theme .night-book-card p {
+  margin: 0;
+  line-height: 1.65;
+  color: #906b87;
+}
+
+@media (max-width: 1024px) {
+  .night-theme .night-profile-grid,
+  .night-theme .night-profile-panel-story {
+    grid-template-columns: 1fr;
+  }
+
+  .night-theme .night-profile-joblike .yiyaa-profile-hero {
+    padding: 0.9rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .night-theme .night-profile-joblike .yiyaa-lifestyle-highlights,
+  .night-theme .night-profile-joblike .yiyaa-key-info {
+    grid-template-columns: 1fr;
+  }
+
+  .night-theme .night-profile-bottom-card {
+    padding: 0.9rem;
+  }
+}
+
+.night-theme .night-book-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  align-items: stretch;
+}
+
+.night-theme .night-book-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.15rem;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 20, 147, 0.14);
+  background: rgba(255, 255, 255, 0.88);
+  color: #6f2d6b;
+  text-decoration: none;
+  font-family: "Space Mono", monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.night-theme .night-book-button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 20, 147, 0.26);
+  box-shadow: 0 10px 20px rgba(255, 20, 147, 0.08);
+}
+
+.night-theme .night-book-primary {
+  background: linear-gradient(135deg, rgba(255, 20, 147, 0.12), rgba(255, 184, 0, 0.12));
+  color: #ff1493;
+}
+
+.night-theme .featured-gallery-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.night-theme .featured-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 8px;
+  gap: 1rem;
+}
+
+.night-theme .featured-gallery-card {
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  border-radius: 1.6rem;
+  padding: 0;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 12px 28px rgba(255, 20, 147, 0.08);
+}
+
+.night-theme .featured-gallery-card.gallery-shape-small {
+  height: 220px;
+}
+
+.night-theme .featured-gallery-card.gallery-shape-medium {
+  height: 300px;
+}
+
+.night-theme .featured-gallery-card.gallery-shape-tall {
+  height: 420px;
+}
+
+.night-theme .featured-gallery-card.gallery-shape-wide {
+  height: 260px;
+}
+
+.night-theme .featured-gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.08);
+  transition: transform 0.3s ease;
+}
+
+.night-theme .featured-gallery-card:hover .featured-gallery-image {
+  transform: scale(1.12);
+}
+
+.night-theme .featured-gallery-card.gallery-sensitive::after {
+  content: "Blur preview";
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  color: #ff1493;
+  font-family: "Space Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.night-theme .featured-gallery-card.gallery-sensitive .featured-gallery-image {
+  filter: blur(20px);
+  transform: scale(1.18);
+}
+
+body.night-page .gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(37, 14, 37, 0.82);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.24s ease;
+  z-index: 80;
+}
+
+body.night-page .gallery-lightbox.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.night-page .gallery-lightbox-image {
+  max-width: min(92vw, 1100px);
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+  filter: none !important;
+}
+
+body.night-page .gallery-lightbox-image.is-sensitive {
+  filter: none;
+}
+
+body.night-page .gallery-lightbox-close {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #ff1493;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.night-theme .highlight-band::before {
+  background: linear-gradient(115deg, rgba(255, 20, 147, 0.14), rgba(255, 184, 0, 0.12));
+}
+
+.night-theme .skill-meter-fill {
+  background: linear-gradient(90deg, #ff1493, #ffb800);
+}
+
+.night-theme .night-tnc-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: start;
+}
+
+.night-theme .night-tnc-card {
+  overflow: hidden;
+  border-radius: 1.45rem;
+  border: 1px solid rgba(255, 20, 147, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+  align-self: start;
+}
+
+.night-theme .night-tnc-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem 1rem 0.95rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.night-theme .night-tnc-summary::-webkit-details-marker {
+  display: none;
+}
+
+.night-theme .night-tnc-summary h3 {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.night-theme .night-tnc-icon {
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 20, 147, 0.08);
+  border: 1px solid rgba(255, 20, 147, 0.12);
+  color: #ff1493;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.night-theme .night-tnc-card[open] .night-tnc-icon {
+  transform: rotate(45deg);
+}
+
+.night-theme .night-tnc-body {
+  padding: 0 1rem 1rem;
+  border-top: 1px solid rgba(255, 20, 147, 0.08);
+}
+
+.night-theme .night-tnc-body h4 {
+  margin: 0.9rem 0 0.35rem;
+  font-size: 0.9rem;
+}
+
+.night-theme .night-tnc-body p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.night-theme .night-tnc-body {
+  display: none;
+}
+
+.night-theme .night-rate-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: start;
+}
+
+.night-theme .night-rate-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
+  border-radius: 1.7rem;
+  border: 1px solid rgba(255, 20, 147, 0.14);
+  box-shadow: 0 16px 34px rgba(255, 20, 147, 0.08);
+  align-self: start;
+}
+
+.night-theme .night-rate-card::before {
+  content: "";
+  position: absolute;
+  inset: auto -18% -28% auto;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.4);
+  filter: blur(2px);
+}
+
+.night-theme .night-rate-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.night-theme .night-rate-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+  padding: 1.1rem 1.1rem 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.night-theme .night-rate-summary::-webkit-details-marker {
+  display: none;
+}
+
+.night-theme .night-rate-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #6f2d6b;
+}
+
+.night-theme .night-rate-body {
+  padding: 0 1.1rem 1rem;
+  border-top: 1px solid rgba(255, 20, 147, 0.1);
+}
+
+.night-modal-body .night-info-card {
+  padding: 0.95rem 1rem;
+  border-radius: 1.15rem;
+  border: 1px solid rgba(255, 20, 147, 0.1);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.night-theme .night-rate-card p {
+  margin: 0;
+  color: rgba(70, 43, 76, 0.88);
+  line-height: 1.7;
+  font-size: 0.96rem;
+}
+
+.night-modal-body .night-rate-block {
+  display: grid;
+  align-content: start;
+  gap: 0.75rem;
+}
+
+.night-modal-body .night-rate-column {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.night-modal-body .night-rate-block h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #ff1493;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.night-theme .night-price-table,
+.night-modal-body .night-price-table {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.45rem;
+}
+
+.night-theme .night-price-row,
+.night-modal-body .night-price-row {
+  display: grid;
+  grid-template-columns: auto minmax(1.5rem, 1fr) minmax(3.5rem, auto);
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  padding: 0;
+  color: rgba(70, 43, 76, 0.88);
+  line-height: 1.55;
+  font-size: 0.99rem;
+}
+
+.night-theme .night-price-row:last-child,
+.night-modal-body .night-price-row:last-child {
+  margin-bottom: 0;
+}
+
+.night-theme .night-price-name,
+.night-modal-body .night-price-name {
+  min-width: 0;
+}
+
+.night-theme .night-price-leader,
+.night-modal-body .night-price-leader {
+  height: 0;
+  border-bottom: 3px dotted rgba(47, 72, 130, 0.92);
+  transform: translateY(2px);
+}
+
+.night-theme .night-price-row strong,
+.night-modal-body .night-price-row strong {
+  color: #27437f;
+  font-size: 1.02rem;
+  font-weight: 500;
+  text-align: right;
+  white-space: nowrap;
+  justify-self: end;
+  min-width: 3.5rem;
+}
+
+.night-theme .night-rate-section-title {
+  margin: 0.9rem 0 0.2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #27437f;
+}
+
+.night-theme .night-rate-toggle {
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(255, 20, 147, 0.14);
+  color: #ff1493;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.night-theme .night-rate-card[open] .night-rate-toggle {
+  transform: rotate(45deg);
+}
+
+.night-theme .night-rate-card-a {
+  background: linear-gradient(180deg, rgba(255, 214, 233, 0.92), rgba(255, 255, 255, 0.96));
+}
+
+.night-theme .night-rate-card-b {
+  background: linear-gradient(180deg, rgba(255, 244, 214, 0.94), rgba(255, 255, 255, 0.96));
+}
+
+.night-theme .night-rate-card-c {
+  background: linear-gradient(180deg, rgba(224, 243, 255, 0.95), rgba(255, 255, 255, 0.96));
+}
+
+.night-theme .night-rate-card-d {
+  background: linear-gradient(180deg, rgba(239, 232, 255, 0.95), rgba(255, 255, 255, 0.96));
+}
+
+.night-theme .night-rate-pill {
+  margin-top: 0.85rem;
+  align-self: flex-start;
+  display: inline-flex;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 20, 147, 0.14);
+  color: #ff1493;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.night-theme .night-rate-strip {
+  margin-top: 1rem;
+}
+
+.night-theme .night-rate-note {
+  padding: 1rem 1.1rem;
+  border-radius: 1.35rem;
+  border: 1px solid rgba(255, 20, 147, 0.12);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.84), rgba(255, 242, 248, 0.9));
+}
+
+.night-theme .night-rate-note p {
+  margin: 0.4rem 0 0;
+  line-height: 1.65;
+}
+
+.night-theme .night-rate-body {
+  display: none;
+}
+
+body.night-modal-open {
+  overflow: hidden;
+}
+
+.night-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(54, 23, 55, 0.42);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.24s ease;
+  z-index: 60;
+}
+
+.night-modal-backdrop[aria-hidden="false"] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.night-modal-panel {
+  position: relative;
+  width: min(760px, 100%);
+  max-height: min(78vh, 900px);
+  overflow: auto;
+  padding: 1.4rem;
+  border-radius: 1.8rem;
+  border: 1px solid rgba(255, 20, 147, 0.16);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(255, 245, 249, 0.96));
+  box-shadow: 0 26px 60px rgba(84, 28, 69, 0.22);
+}
+
+.night-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 20, 147, 0.08);
+  color: #ff1493;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.night-modal-head {
+  padding-right: 3rem;
+  margin-bottom: 1rem;
+}
+
+.night-modal-head h3 {
+  margin: 0.35rem 0 0;
+  font-size: 1.55rem;
+  color: #6f2d6b;
+}
+
+.night-modal-body {
+  display: grid;
+  gap: 0.95rem;
+  color: rgba(70, 43, 76, 0.9);
+}
+
+.night-modal-body .night-modal-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.night-modal-body .night-modal-single {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.night-modal-body h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #ff1493;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.night-modal-body p {
+  margin: 0;
+  line-height: 1.75;
+}
+
+.night-modal-body .night-info-list {
+  margin: 0.55rem 0 0;
+  padding-left: 1rem;
+  line-height: 1.75;
+}
+
+.night-modal-body .night-rate-pill {
+  margin-top: 0;
+}
+
+@media (max-width: 640px) {
+  .night-modal-body .night-modal-split {
+    grid-template-columns: 1fr;
+  }
+
+  .night-theme .night-price-row {
+    gap: 0.7rem;
+    font-size: 0.88rem;
+  }
+}
+
+.night-theme .night-physical-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.7rem;
+  width: 100%;
+}
+
+.night-theme .night-physical-grid .mini-card {
+  padding: 0.9rem 0.65rem;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(255, 20, 147, 0.08);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.99), rgba(255, 248, 252, 0.96));
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.night-theme .night-physical-grid .mini-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(255, 20, 147, 0.14);
+  border-color: rgba(255, 20, 147, 0.2);
+}
+
+.night-theme .night-physical-grid .mini-label {
+  margin: 0;
+  padding: 0;
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #ff1493;
+  text-transform: uppercase;
+  display: block;
+  white-space: normal;
+}
+
+.night-theme .night-physical-grid p {
+  font-size: 0.88rem;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #2f1e2a;
+  font-weight: 600;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  min-height: 1.4em;
+}
+
+@media (max-width: 1440px) {
+  .night-theme .night-physical-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.65rem;
+  }
+
+  .night-theme .night-physical-grid .mini-card {
+    padding: 0.85rem 0.6rem;
+    height: 128px;
+  }
+
+  .night-theme .night-physical-grid .mini-label {
+    font-size: 0.63rem;
+  }
+
+  .night-theme .night-physical-grid p {
+    font-size: 0.86rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .night-theme .night-physical-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+  }
+
+  .night-theme .night-physical-grid .mini-card {
+    padding: 0.8rem 0.55rem;
+    height: 125px;
+  }
+
+  .night-theme .night-physical-grid .mini-label {
+    font-size: 0.62rem;
+  }
+
+  .night-theme .night-physical-grid p {
+    font-size: 0.84rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .night-theme .night-physical-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.55rem;
+  }
+
+  .night-theme .night-physical-grid .mini-card {
+    padding: 0.75rem 0.5rem;
+    height: 120px;
+  }
+
+  .night-theme .night-physical-grid .mini-label {
+    font-size: 0.61rem;
+  }
+
+  .night-theme .night-physical-grid p {
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .night-theme .night-physical-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .night-theme .night-physical-grid .mini-card {
+    padding: 0.75rem 0.7rem;
+    height: 100px;
+  }
+
+  .night-theme .night-physical-grid .mini-label {
+    font-size: 0.62rem;
+  }
+
+  .night-theme .night-physical-grid p {
+    font-size: 0.83rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .job-theme .featured-gallery-grid,
+  .night-theme .featured-gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .job-theme .featured-gallery-card.gallery-shape-small,
+  .job-theme .featured-gallery-card.gallery-shape-medium,
+  .job-theme .featured-gallery-card.gallery-shape-tall,
+  .job-theme .featured-gallery-card.gallery-shape-wide,
+  .night-theme .featured-gallery-card.gallery-shape-small,
+  .night-theme .featured-gallery-card.gallery-shape-medium,
+  .night-theme .featured-gallery-card.gallery-shape-tall,
+  .night-theme .featured-gallery-card.gallery-shape-wide {
+    height: auto;
+    grid-row-end: auto !important;
+  }
+
+  .job-theme .featured-gallery-image,
+  .night-theme .featured-gallery-image {
+    transform: none;
+  }
+
+  .night-theme .night-tnc-cards,
+  .night-theme .night-rate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .night-theme .night-book-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .night-theme .night-book-card-wide {
+    grid-template-columns: 1fr;
+  }
+
+  .night-theme .night-rate-card {
+    min-height: 0;
+  }
+}
+
+/* ===== MODERN CHARACTER SHOWCASE LAYOUT ===== */
+
+/* Hide old layout elements */
+.yiyaa-ratecard-page .yiyaa-ratecard-shell,
+.yiyaa-ratecard-page .pricing-showcase,
+.yiyaa-ratecard-page .yiyaa-hero-card,
+.yiyaa-ratecard-page .yiyaa-story-roadmap,
+.yiyaa-ratecard-page .yiyaa-mini-card,
+.yiyaa-ratecard-page .yiyaa-service-grid,
+.yiyaa-ratecard-page .yiyaa-physical-card,
+.yiyaa-ratecard-page .yiyaa-spec-grid,
+.yiyaa-ratecard-page .yiyaa-preference-card,
+.yiyaa-ratecard-page .yiyaa-lifestyle-card,
+.yiyaa-ratecard-page .yiyaa-meet-card,
+.yiyaa-ratecard-page .yiyaa-boundary-card,
+.yiyaa-ratecard-page .yiyaa-mood-mosaic,
+.yiyaa-ratecard-page .yiyaa-editorial-grid {
+  display: none !important;
+}
+
+/* Character Showcase - Modern Clean Layout */
+.yiyaa-ratecard-page .yiyaa-character-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Profile Hero Section */
+.yiyaa-ratecard-page .yiyaa-profile-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98));
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 102, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 102, 255, 0.06);
+}
+
+.yiyaa-ratecard-page .profile-avatar {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.yiyaa-ratecard-page .avatar-placeholder i {
+  color: white;
+}
+
+.yiyaa-ratecard-page .stat-icon i {
+  color: #0066ff;
+}
+
+.yiyaa-ratecard-page .highlight-icon i {
+  color: #0066ff;
+}
+
+.yiyaa-ratecard-page .info-card h4 i {
+  color: #243756;
+  vertical-align: middle;
+}
+
+.yiyaa-ratecard-page .profile-info {
+  flex: 1;
+}
+
+.yiyaa-ratecard-page .profile-label {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(0, 102, 255, 0.1);
+  color: #0066ff;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.yiyaa-ratecard-page .profile-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #243756;
+}
+
+.yiyaa-ratecard-page .profile-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Stats Grid */
+.yiyaa-ratecard-page .yiyaa-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.yiyaa-ratecard-page .stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 102, 255, 0.06);
+  transition: all 0.3s ease;
+}
+
+.yiyaa-ratecard-page .stat-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.08);
+}
+
+.yiyaa-ratecard-page .stat-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.yiyaa-ratecard-page .stat-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.yiyaa-ratecard-page .stat-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.yiyaa-ratecard-page .stat-value {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #243756;
+}
+
+/* Traits Section */
+.yiyaa-ratecard-page .yiyaa-traits-section h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #243756;
+}
+
+.yiyaa-ratecard-page .traits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.yiyaa-ratecard-page .trait-tag {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 102, 255, 0.08);
+  color: #243756;
+  transition: all 0.3s ease;
+}
+
+.yiyaa-ratecard-page .trait-tag:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 102, 255, 0.06);
+}
+
+.yiyaa-ratecard-page .trait-tag.warm {
+  background: linear-gradient(135deg, #ff6b9d, #ffb3d9);
+  color: white;
+}
+
+.yiyaa-ratecard-page .trait-tag.creative {
+  background: linear-gradient(135deg, #9c27b0, #e1bee7);
+  color: white;
+}
+
+.yiyaa-ratecard-page .trait-tag.sporty {
+  background: linear-gradient(135deg, #ffb800, #ffe28a);
+  color: #243756;
+}
+
+.yiyaa-ratecard-page .trait-tag.expressive {
+  background: linear-gradient(135deg, #ff6b9d, #ffb3d9);
+  color: white;
+}
+
+.yiyaa-ratecard-page .trait-tag.respectful {
+  background: linear-gradient(135deg, #0066ff, #7db4ff);
+  color: white;
+}
+
+.yiyaa-ratecard-page .trait-tag.genuine {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: white;
+}
+
+/* Lifestyle Highlights */
+.yiyaa-ratecard-page .yiyaa-lifestyle-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.yiyaa-ratecard-page .highlight-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(0, 102, 255, 0.06);
+  transition: all 0.3s ease;
+}
+
+.yiyaa-ratecard-page .highlight-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 102, 255, 0.08);
+}
+
+.yiyaa-ratecard-page .highlight-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.yiyaa-ratecard-page .highlight-content h5 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #243756;
+}
+
+.yiyaa-ratecard-page .highlight-content p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Key Information */
+.yiyaa-ratecard-page .yiyaa-key-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.yiyaa-ratecard-page .info-card {
+  padding: 2rem 1.5rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 102, 255, 0.06);
+  transition: all 0.3s ease;
+}
+
+.yiyaa-ratecard-page .info-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 102, 255, 0.08);
+}
+
+.yiyaa-ratecard-page .info-card.primary {
+  background: linear-gradient(135deg, rgba(255, 184, 0, 0.05), rgba(255, 255, 255, 0.95));
+  border-color: rgba(255, 184, 0, 0.15);
+}
+
+.yiyaa-ratecard-page .info-card.secondary {
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(255, 255, 255, 0.95));
+  border-color: rgba(0, 102, 255, 0.15);
+}
+
+.yiyaa-ratecard-page .info-card h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #243756;
+}
+
+.yiyaa-ratecard-page .info-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ===== MOBILE OPTIMIZATIONS ===== */
+@media (max-width: 640px) {
+  .yiyaa-ratecard-page .yiyaa-character-showcase {
+    gap: 1rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-profile-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .yiyaa-ratecard-page .avatar-placeholder {
+    width: 60px;
+    height: 60px;
+    font-size: 1.75rem;
+  }
+
+  .yiyaa-ratecard-page .profile-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .yiyaa-ratecard-page .stat-item {
+    padding: 0.625rem;
+  }
+
+  .yiyaa-ratecard-page .stat-icon {
+    font-size: 1.1rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-lifestyle-highlights {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .yiyaa-ratecard-page .highlight-card {
+    padding: 0.875rem;
+  }
+
+  .yiyaa-ratecard-page .highlight-icon {
+    font-size: 1.5rem;
+  }
+
+  .yiyaa-ratecard-page .yiyaa-key-info {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .yiyaa-ratecard-page .info-card {
+    padding: 1rem 0.875rem;
+  }
+
+  .yiyaa-ratecard-page .traits-grid {
+    gap: 0.3rem;
+  }
+
+  .yiyaa-ratecard-page .trait-tag {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+  }
+}
+
+/* Night Profile Mobile Optimizations */
+@media (max-width: 900px) {
+  .night-theme .night-profile-joblike .yiyaa-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+
+  .night-theme .night-profile-joblike .yiyaa-lifestyle-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .night-theme .night-profile-joblike .traits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .night-theme .night-profile-joblike {
+    padding: 0.6rem;
+    gap: 0.6rem;
+  }
+
+  .night-theme .night-profile-joblike .yiyaa-profile-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 0.9rem;
+  }
+
+  .night-theme .night-profile-joblike .profile-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .night-theme .night-profile-joblike .yiyaa-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .night-theme .night-profile-joblike .stat-item {
+    padding: 0.6rem;
+  }
+
+  .night-theme .night-profile-joblike .stat-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .night-theme .night-profile-joblike .stat-label {
+    font-size: 0.64rem;
+  }
+
+  .night-theme .night-profile-joblike .stat-value {
+    font-size: 0.85rem;
+  }
+
+  .night-theme .night-profile-joblike .yiyaa-traits-section {
+    padding: 0.85rem;
+  }
+
+  .night-theme .night-profile-joblike .yiyaa-traits-section h4 {
+    font-size: 0.95rem;
+  }
+
+  .night-theme .night-profile-joblike .traits-grid {
+    gap: 0.4rem;
+  }
+
+  .night-theme .night-profile-joblike .trait-tag {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .night-theme .night-profile-joblike .yiyaa-lifestyle-highlights {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .night-theme .night-profile-joblike .highlight-card {
+    padding: 0.85rem;
+  }
+
+  .night-theme .night-profile-joblike .highlight-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .night-theme .night-profile-joblike .highlight-content h5 {
+    font-size: 0.95rem;
+  }
+
+  .night-theme .night-profile-joblike .highlight-content p {
+    font-size: 0.85rem;
+  }
+}

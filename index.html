@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="icon" href="data:,">
+  <!-- External Libraries -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/animations.css">
+  
+  <!-- Base styles -->
+  <style>
+    body { box-sizing: border-box; }
+  </style>
+ </head>
+ <body class="h-full">
+  <div class="app-root font-syne" id="app"><!-- LANDING -->
+   <div id="landing" class="section-view active">
+    <div class="landing-wrapper">
+     <div class="hero-header">
+      <!-- Background Title with Subtitle -->
+      <div class="title-section">
+       <h1 class="portfolio-title-bg" id="heroTitle">PORTFOLIO</h1>
+       <p class="hero-subtitle fade-in stagger-1" id="heroSubtitle">Fashion & Modelling</p>
+      </div>
+      
+      <!-- Main Content Container -->
+      <div class="portfolio-container">
+       <!-- Left Section -->
+       <div class="portfolio-left portfolio-side">
+        <div class="left-option fade-in stagger-2" onclick="window.location.href='job.html'" style="cursor:pointer;">
+         <p class="side-label">JOB &<br>COLLABORATION</p>
+        </div>
+       </div>
+       
+       <!-- Center Image -->
+       <div class="center-wrapper fade-in stagger-3">
+        <img id="centerImage" src="assets/WhatsApp%20Image%202026-04-02%20at%2018.59.47.jpeg" alt="Portfolio" class="center-image">
+        <div class="decorative-circle"></div>
+       </div>
+       
+       <!-- Right Section -->
+       <div class="portfolio-right portfolio-side">
+        <div class="right-option fade-in stagger-4" onclick="window.location.href='night.html'" style="cursor:pointer;">
+         <p class="side-label">NIGHT<br>LIFE</p>
+        </div>
+       </div>
+      </div>
+      
+      <!-- Bottom Decorative Dots -->
+      <div class="decorative-dots fade-in stagger-5">
+       <span class="dot dot-yellow"></span>
+       <span class="dot dot-blue"></span>
+       <span class="dot dot-pink"></span>
+      </div>
+      
+      <!-- Footer -->
+      <div class="portfolio-footer fade-in stagger-6">
+       <p>&copy; 2026 PORTFOLIO</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- JavaScript Modules -->
+    <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/init.js"></script>
+  
+  <!-- Cloudflare Challenge Script -->
+  <script>
+    (function(){
+      function c(){
+        var b = a.contentDocument || a.contentWindow.document;
+        if(b){
+          var d = b.createElement('script');
+          d.innerHTML = "window.__CF$cv$params={r:'9e5ed46ca127266d',t:'MTc3NTEyMjM4My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+          b.getElementsByTagName('head')[0].appendChild(d);
+        }
+      }
+      if(document.body){
+        var a = document.createElement('iframe');
+        a.height = 1;
+        a.width = 1;
+        a.style.position = 'absolute';
+        a.style.top = 0;
+        a.style.left = 0;
+        a.style.border = 'none';
+        a.style.visibility = 'hidden';
+        document.body.appendChild(a);
+        if('loading' !== document.readyState) c();
+        else if(window.addEventListener) document.addEventListener('DOMContentLoaded', c);
+        else {
+          var e = document.onreadystatechange || function(){};
+          document.onreadystatechange = function(b){
+            e(b);
+            if('loading' !== document.readyState){
+              document.onreadystatechange = e;
+              c();
+            }
+          }
+        }
+      }
+    })();
+  </script>
+ </body>
+</html>

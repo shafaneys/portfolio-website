@@ -1,0 +1,823 @@
+﻿<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Night Life - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <style>body { box-sizing: border-box; }</style>
+ </head>
+ <body class="h-full night-page">
+  <div class="app-root font-syne" id="app">
+   <div id="nightSection" class="section-view active night-theme" style="display: block; min-height: 100%;">
+    <div class="detail-shell">
+     <div class="detail-topbar flex items-center justify-between mb-10 fade-in">
+      <a href="index.html" class="flex items-center gap-2 text-sm" style="color:#FF1493;text-decoration:none;cursor:pointer;">
+       <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> Back
+      </a>
+      <span class="font-mono text-xs tracking-widest night-accent">NIGHT LIFE</span>
+     </div>
+
+     <nav class="detail-scroll-nav fade-in" id="nightTabs">
+      <a class="night-tab nav-pill font-mono active" href="#night-profile">Profile</a>
+      <a class="night-tab nav-pill font-mono" href="#night-tnc">T&amp;C</a>
+      <a class="night-tab nav-pill font-mono" href="#night-ratecard">Rate Card</a>
+      <a class="night-tab nav-pill font-mono" href="#night-gallery">Gallery</a>
+     </nav>
+
+      <section id="night-profile" class="detail-section fade-in">
+       <div class="night-card section-frame night-profile-joblike">
+        <div class="yiyaa-character-showcase">
+         <div class="yiyaa-profile-hero">
+          <div class="profile-avatar">
+           <img src="assets/night-profile-new.jpeg" alt="Night profile photo" style="width:96px;height:96px;border-radius:999px;object-fit:cover;object-position:center;display:block;border:2px solid rgba(255,255,255,0.75);box-shadow:0 12px 30px rgba(0,0,0,0.16);">
+          </div>
+          <div class="profile-info">
+           <span class="profile-label">Night Profile</span>
+           <h3 id="nightProfileName">Dihan Bolang Cantik</h3>
+           <p id="nightProfileBio">Law &amp; tech student • Sporty-petite • Clean meet only • Stylish and clear on boundaries</p>
+          </div>
+         </div>
+
+         <div class="yiyaa-stats-grid">
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="ruler" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Height</span><span class="stat-value">155 cm</span></div></div>
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="scale" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Weight</span><span class="stat-value">45 kg</span></div></div>
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="user" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Bust</span><span class="stat-value">34A (82 cm)</span></div></div>
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="activity" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Tummy</span><span class="stat-value">65 cm</span></div></div>
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="move-horizontal" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Waist</span><span class="stat-value">72 cm</span></div></div>
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="move-vertical" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Hip</span><span class="stat-value">82 cm</span></div></div>
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="arrow-up-down" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Shoulder</span><span class="stat-value">40 cm</span></div></div>
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="scissors" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Hair</span><span class="stat-value">Black Straight Layer</span></div></div>
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="palette" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Skin Tone</span><span class="stat-value">IV Olive Tane Caramel</span></div></div>
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="eye" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Glasses</span><span class="stat-value">Thick affff</span></div></div>
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="map-pin" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Domicile</span><span class="stat-value">Tangsel</span></div></div>
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="sparkles" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Style</span><span class="stat-value">Sporty-petite</span></div></div>
+          <div class="stat-item"><div class="stat-icon"><i data-lucide="moon" style="width:20px;height:20px;"></i></div><div class="stat-content"><span class="stat-label">Note</span><span class="stat-value">Yali-yali (hijabi) sometimes</span></div></div>
+         </div>
+
+         <div class="yiyaa-traits-section">
+          <h4>Personality &amp; Vibes</h4>
+          <div class="traits-grid">
+           <span class="trait-tag expressive">Vocal</span>
+           <span class="trait-tag warm">Manja If Comfortable</span>
+           <span class="trait-tag sporty">Sporty</span>
+           <span class="trait-tag creative">Stylish</span>
+           <span class="trait-tag respectful">Consent Aware</span>
+           <span class="trait-tag genuine">Effortful</span>
+          </div>
+         </div>
+
+         <div class="yiyaa-lifestyle-highlights">
+          <div class="highlight-card">
+           <div class="highlight-icon"><i data-lucide="coffee" style="width:24px;height:24px;"></i></div>
+           <div class="highlight-content">
+            <h5>Favorites</h5>
+            <p>Matcha, kopi, coklat, taichan, bakso, aci-acian, cheesecake, fruits, and clean eating.</p>
+           </div>
+          </div>
+          <div class="highlight-card">
+           <div class="highlight-icon"><i data-lucide="dumbbell" style="width:24px;height:24px;"></i></div>
+           <div class="highlight-content">
+            <h5>Routine</h5>
+            <p>Work, college, gym, food, sleep, and repeat. Likes people who come prepared and well-dressed.</p>
+           </div>
+          </div>
+          <div class="highlight-card">
+           <div class="highlight-icon"><i data-lucide="shield-check" style="width:24px;height:24px;"></i></div>
+           <div class="highlight-content">
+            <h5>Boundaries</h5>
+            <p>Manner is number 1. No touching without consent, no weird behavior, and no negotiation around basic respect.</p>
+           </div>
+          </div>
+         </div>
+
+         <div class="yiyaa-key-info">
+          <div class="info-card primary">
+           <h4><i data-lucide="star" style="width:20px;height:20px;margin-right:8px;"></i>First Impression</h4>
+           <p>Clean, girly, sporty, and visually polished. Feels more attractive when the other person also knows how to present themselves well.</p>
+          </div>
+          <div class="info-card secondary">
+           <h4><i data-lucide="heart" style="width:20px;height:20px;margin-right:8px;"></i>In Person</h4>
+           <p>Can be galak at first, but becomes manja and very effort once comfortable. Clear boundaries and good manners matter most.</p>
+          </div>
+         </div>
+
+         <div class="night-profile-bottom-card">
+          <div class="night-book-copy">
+           <span class="mini-label">Book here</span>
+           <p>Kalau mau reach out, booking, atau kepoin update terbaru Dihan, tinggal pilih platform yang paling nyaman di bawah ini.</p>
+          </div>
+          <div class="night-book-actions">
+           <a class="night-book-button night-book-primary" href="https://docs.google.com/forms/d/1O_VnsU-31pxgLokaQTiPDk5eAwvc6veYxOKzHRnGPkQ/viewform?usp=drivesdk&amp;edit_requested=true&amp;pli=1&amp;authuser=0" target="_blank" rel="noreferrer">Book Here</a>
+           <a class="night-book-button" href="https://www.instagram.com/ethihc_?igsh=MW9uY3QzbG5wZ28ydw==" target="_blank" rel="noreferrer">Instagram</a>
+           <a class="night-book-button" href="https://www.tiktok.com/@ethihc?_r=1&amp;_t=ZS-95D3au0u4Pt" target="_blank" rel="noreferrer">TikTok</a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+
+     <section id="night-tnc" class="detail-section fade-in">
+      <div class="night-card section-frame">
+       <span class="section-kicker">Booking Rules</span>
+       <h2 class="section-heading night-accent">Terms &amp; Conditions</h2>
+       <div class="night-tnc-cards">
+        <details class="night-tnc-card">
+         <summary class="night-tnc-summary">
+          <div>
+           <span class="mini-label">T&amp;C 01</span>
+           <h3>Love Care</h3>
+          </div>
+          <span class="night-tnc-icon">+</span>
+         </summary>
+         <div class="night-tnc-body">
+          <div class="night-modal-split">
+           <section class="night-info-card">
+            <h4>Do's</h4>
+            <ul class="night-info-list">
+             <li>Payment cashless on room.</li>
+             <li>Cek kecocokan dulu sebelum booking.</li>
+             <li>Include: non-smoking room.</li>
+             <li>Exclude: transport di luar rates.</li>
+             <li>Exclude minimal at 3 star hotel.</li>
+             <li>Healthy and prime condition.</li>
+             <li>Respect boundaries and consent.</li>
+             <li>H-1 confirmation required.</li>
+             <li>Personal grooming required.</li>
+             <li>Always ask Dihan's consent.</li>
+             <li>Always ask Dihan's availability for impromptu booking.</li>
+             <li>Book dadakan kena add on 300k di luar transport dan rates.</li>
+             <li>Shower beforehand.</li>
+             <li>Gargled or brush teeth.</li>
+             <li>Include: bring your own essentials.</li>
+             <li>Free for outfit or look requests.</li>
+             <li>On time.</li>
+             <li>Session starts after payment is complete.</li>
+             <li>Dihan cancel = refund or reschedule.</li>
+             <li>Dihan include = add on 300k.</li>
+             <li>You request include = +450k.</li>
+             <li>Request include mendadak untuk hari H kena charge +750k.</li>
+            </ul>
+           </section>
+           <section class="night-info-card">
+            <h4>Don'ts</h4>
+            <ul class="night-info-list">
+             <li>No COD, always DP first 50%.</li>
+             <li>No negotiation, rates are nett.</li>
+             <li>No smoking, vape, drugs, or alcohol.</li>
+             <li>Usahakan jangan merokok sebelum sesi.</li>
+             <li>Jangan merokok di room saat ada Dihan.</li>
+             <li>No apartment for exclude.</li>
+             <li>No home or boarding service.</li>
+             <li>No weird requests.</li>
+             <li>No rough play.</li>
+             <li>No degrade or humiliate treatment.</li>
+             <li>No abusive treatment.</li>
+             <li>No sudden reschedule.</li>
+             <li>No refund for client's cancellation.</li>
+             <li>No record. Documentation hanya pakai Dihan's gear.</li>
+             <li>No DP or COD preferred? Cari yang lain saja.</li>
+             <li>Not gonna start until payment complete.</li>
+             <li>Not being late. Duration keep going even if you're late.</li>
+             <li>Include: don't use any stuff in the room.</li>
+             <li>No religious attributes request during session.</li>
+             <li>No kuku panjang. Please cut your nails and keep it clean.</li>
+             <li>Kuku kotor? No direct contact.</li>
+             <li>Keep DP max 1 bulan.</li>
+            </ul>
+           </section>
+          </div>
+         </div>
+        </details>
+        <details class="night-tnc-card">
+         <summary class="night-tnc-summary">
+          <div>
+           <span class="mini-label">T&amp;C 02</span>
+           <h3>Exclusive</h3>
+          </div>
+          <span class="night-tnc-icon">+</span>
+         </summary>
+         <div class="night-tnc-body">
+          <div class="night-modal-split">
+           <section class="night-info-card">
+            <h4>Do's</h4>
+            <ul class="night-info-list">
+             <li>Payment cashless on room.</li>
+             <li>Cek kecocokan dulu sebelum booking.</li>
+             <li>Include: non-smoking room.</li>
+             <li>Exclude: transport di luar rates.</li>
+             <li>Exclude minimal at 3 star hotel.</li>
+             <li>Healthy and prime condition.</li>
+             <li>Respect boundaries and consent.</li>
+             <li>H-1 confirmation required.</li>
+             <li>Personal grooming required.</li>
+             <li>Always ask Dihan's consent.</li>
+             <li>Always ask Dihan's availability for impromptu booking.</li>
+             <li>Book dadakan kena add on 300k di luar transport dan rates.</li>
+             <li>Shower beforehand.</li>
+             <li>Gargled or brush teeth.</li>
+             <li>Include: bring your own essentials.</li>
+             <li>Free for outfit or look requests.</li>
+             <li>On time.</li>
+             <li>Follow the required safety setup.</li>
+             <li>Dihan cancel = refund or reschedule.</li>
+             <li>Session starts after payment is complete.</li>
+             <li>Dihan include = add on 300k.</li>
+             <li>You request include = +450k.</li>
+             <li>Request include mendadak untuk hari H kena charge +750k.</li>
+            </ul>
+           </section>
+           <section class="night-info-card">
+            <h4>Don'ts</h4>
+            <ul class="night-info-list">
+             <li>No COD, always DP first 50%.</li>
+             <li>No negotiation, rates are nett.</li>
+             <li>No smoking, vape, drugs, or alcohol.</li>
+             <li>No apartment for exclude.</li>
+             <li>No home or boarding service.</li>
+             <li>No weird requests.</li>
+             <li>No sudden reschedule.</li>
+             <li>No refund for client's cancellation.</li>
+             <li>No record. Documentation hanya pakai Dihan's gear.</li>
+             <li>No DP or COD preferred? Cari yang lain saja.</li>
+             <li>Not gonna start until payment complete.</li>
+             <li>Not being late. Duration keep going even if you're late.</li>
+             <li>Include: don't use any stuff in the room.</li>
+             <li>No religious attributes request during session.</li>
+             <li>No kuku panjang. Please cut your nails and keep it clean.</li>
+             <li>Kuku kotor? No direct contact.</li>
+             <li>No unsafe practice.</li>
+             <li>No humiliation or abusive treatment.</li>
+             <li>No extreme scene requests.</li>
+             <li>Additional themed requests may use separate rates.</li>
+             <li>Allowed support items only. No improvised request.</li>
+             <li>Rates for 1 on 1 only. Group format has different rates.</li>
+             <li>Keep DP max 1 bulan.</li>
+            </ul>
+           </section>
+          </div>
+         </div>
+        </details>
+        <details class="night-tnc-card">
+         <summary class="night-tnc-summary">
+          <div>
+           <span class="mini-label">T&amp;C 03</span>
+           <h3>BJ in Car</h3>
+          </div>
+          <span class="night-tnc-icon">+</span>
+        </summary>
+        <div class="night-tnc-body">
+          <div class="night-modal-single">
+           <section class="night-info-card">
+            <h4>Rules</h4>
+            <ul class="night-info-list">
+             <li>No COD, always DP at first.</li>
+             <li>No negotiation, all rates are nett.</li>
+             <li>Transport excluded from rates.</li>
+             <li>Cek kecocokan dulu sebelum booking.</li>
+             <li>Send DP + transport.</li>
+             <li>No pick up service.</li>
+             <li>Healthy condition only.</li>
+             <li>Personal grooming required.</li>
+             <li>No record. Documentation hanya pakai Dihan's device.</li>
+             <li>Cancel? No refund.</li>
+             <li>Impromptu reschedule? Cancel no refund.</li>
+             <li>Service hanya sesuai booking format.</li>
+             <li>No extra physical request.</li>
+             <li>Light affection only if agreed.</li>
+             <li>Car must be stopped.</li>
+             <li>Follow the required completion rule.</li>
+             <li>Always ask Dihan's availability for impromptu booking.</li>
+             <li>No smoking please.</li>
+             <li>Wajib ada tissue basah &amp; kering.</li>
+             <li>On time. Toleransi 5-10 menit.</li>
+             <li>Telat lebih dari 10 menit, durasi dianggap mulai.</li>
+             <li>Wajib info warna, tipe mobil, dan nopol.</li>
+             <li>Meet = duration start saat masuk mobil.</li>
+             <li>Keep DP max 1 bulan.</li>
+             <li>Book dadakan kena add on 300k di luar transport dan rates.</li>
+            </ul>
+           </section>
+          </div>
+         </div>
+        </details>
+        <details class="night-tnc-card">
+         <summary class="night-tnc-summary">
+          <div>
+           <span class="mini-label">T&amp;C 04</span>
+           <h3>GF Rent (Offline)</h3>
+          </div>
+          <span class="night-tnc-icon">+</span>
+         </summary>
+         <div class="night-tnc-body">
+          <div class="night-modal-split">
+           <section class="night-info-card">
+            <h4>Do's</h4>
+            <ul class="night-info-list">
+             <li>Only cashless via QRIS.</li>
+             <li>Cek kecocokan dulu sebelum booking.</li>
+             <li>Dihan hates cigarettes, vape okay.</li>
+             <li>Expo format: 2 days dating.</li>
+             <li>Only date in public space.</li>
+             <li>It's a clean date.</li>
+             <li>Healthy and prime condition.</li>
+             <li>Be mannered. Consent matters.</li>
+             <li>H-1 confirmation required.</li>
+             <li>Clean looks preferred.</li>
+             <li>Always ask Dihan's consent.</li>
+             <li>Always ask Dihan's availability for impromptu booking.</li>
+             <li>Use perfume with a good scent.</li>
+             <li>Gargled or brush teeth.</li>
+             <li>Expo GFR: free 1 hour cuddle.</li>
+             <li>Free for outfit or look requests.</li>
+             <li>On time.</li>
+             <li>Dihan cancel = refund or reschedule.</li>
+             <li>Transport excluded.</li>
+             <li>Keep DP max 1 bulan.</li>
+             <li>Book dadakan kena add on 300k di luar transport dan rates.</li>
+             <li>Light affection allowed sewajarnya di public space dengan consent.</li>
+            </ul>
+           </section>
+           <section class="night-info-card">
+            <h4>Don'ts</h4>
+            <ul class="night-info-list">
+             <li>No COD, always DP first 50%.</li>
+             <li>No negotiation, rates are nett.</li>
+             <li>No smoking, vape, drugs, or alcohol.</li>
+             <li>No apartment for exclude.</li>
+             <li>No home or boarding service.</li>
+             <li>Not for explicit fantasy requests.</li>
+             <li>No harassment.</li>
+             <li>No rude touchy. Semua physical interaction by consent di awal.</li>
+             <li>No sudden reschedule.</li>
+             <li>No refund for client's cancellation.</li>
+             <li>No record. Documentation hanya pakai Dihan's gear.</li>
+             <li>No DP or COD preferred? Cari yang lain saja.</li>
+             <li>Not gonna start until payment complete.</li>
+             <li>Not being late. Duration keep going even if you're late.</li>
+             <li>Expo GFR: no extra request di luar clean arrangement.</li>
+             <li>No religious attributes on request.</li>
+             <li>Meet = duration start. Session begin once the payment completes.</li>
+             <li>Ga boleh rude touchy. Let Dihan getting closer to you in her own pace.</li>
+             <li>Jangan peluk atau cium duluan sebelum ada consent yang jelas.</li>
+             <li>Kalau mau inisiasi, tetap tanya dulu dengan sopan.</li>
+            </ul>
+           </section>
+          </div>
+         </div>
+        </details>
+       </div>
+      </div>
+     </section>
+
+     <section id="night-ratecard" class="detail-section fade-in">
+      <div class="night-card section-frame">
+       <span class="section-kicker">Service Categories</span>
+       <h2 class="section-heading night-accent">Rate Card</h2>
+       <div class="night-rate-grid">
+        <details class="night-rate-card night-rate-card-a">
+         <summary class="night-rate-summary">
+          <div>
+           <span class="mini-label">Category 01</span>
+           <h3>LC &amp; BJIC</h3>
+          </div>
+          <span class="night-rate-toggle">+</span>
+         </summary>
+         <div class="night-rate-body">
+          <div class="night-modal-split">
+           <div class="night-rate-column">
+            <section class="night-info-card night-rate-block">
+             <h4>Package list</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">LC (1 jam : 1x)</span><span class="night-price-leader"></span><strong>1000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">LC (2 jam : 1x)</span><span class="night-price-leader"></span><strong>1800</strong></div>
+              <div class="night-price-row"><span class="night-price-name">LC (3 jam : 1x)</span><span class="night-price-leader"></span><strong>2700</strong></div>
+              <div class="night-price-row"><span class="night-price-name">LC (1 jam : ~)</span><span class="night-price-leader"></span><strong>1500</strong></div>
+              <div class="night-price-row"><span class="night-price-name">LC (2 jam : ~)</span><span class="night-price-leader"></span><strong>2800</strong></div>
+              <div class="night-price-row"><span class="night-price-name">LC (3 jam : ~)</span><span class="night-price-leader"></span><strong>3900</strong></div>
+             </div>
+            </section>
+            <section class="night-info-card night-rate-block">
+             <h4>Quick Add On</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">BJIC (30 mins : 1x)</span><span class="night-price-leader"></span><strong>800</strong></div>
+              <div class="night-price-row"><span class="night-price-name">BJIC (1 jam : ~)</span><span class="night-price-leader"></span><strong>1500</strong></div>
+              <div class="night-price-row"><span class="night-price-name">BJ EXHIB (20-30 menit : 1x)</span><span class="night-price-leader"></span><strong>1500</strong></div>
+             </div>
+            </section>
+            <section class="night-info-card night-rate-block">
+             <h4>Longtime Package</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">Love Care (4 jam : ~)</span><span class="night-price-leader"></span><strong>4600</strong></div>
+              <div class="night-price-row"><span class="night-price-name">Love Care (5 jam : ~)</span><span class="night-price-leader"></span><strong>5600</strong></div>
+              <div class="night-price-row"><span class="night-price-name">Overnight (23.00-08.00)</span><span class="night-price-leader"></span><strong>6000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">Sleepover Slot (23.00-11.00)</span><span class="night-price-leader"></span><strong>6500</strong></div>
+              <div class="night-price-row"><span class="night-price-name">Check In-Out (15.00-11.00 next day)</span><span class="night-price-leader"></span><strong>8000</strong></div>
+             </div>
+            </section>
+           </div>
+           <section class="night-info-card night-rate-block">
+            <h4>Detail bills</h4>
+            <ul class="night-info-list">
+             <li><strong>Include:</strong> Rates + 300k (biaya room)</li>
+             <li>DP 50% dari rates + 300k.</li>
+             <li><strong>Notes:</strong> request open room mendadak +750k (charge dadakan 300k+room 450k).</li>
+             <li><strong>Exclude:</strong> Rates + Biaya Transport PP.</li>
+             <li>DP 50% dari rates + Transport PP.</li>
+             <li><strong>Notes:</strong> panggilan dadakan ke room +300k di luar rates dan transport.</li>
+             <li><strong>Special booking:</strong> Rates + Transport.</li>
+             <li>DP 50% dari rates + transport PP.</li>
+             <li><strong>Notes:</strong> booking dadakan di hari H dikenakan charge +300k di luar rates dan transport.</li>
+            </ul>
+            <h4>Payment note</h4>
+            <ul class="night-info-list">
+             <li>Payment selalu via QRIS agar tetap lebih private untuk kedua pihak.</li>
+             <li>Tambahkan 3k untuk admin fee merchant QRIS.</li>
+             <li>Terima kasih.</li>
+            </ul>
+           </section>
+          </div>
+         </div>
+        </details>
+        <details class="night-rate-card night-rate-card-b">
+         <summary class="night-rate-summary">
+          <div>
+           <span class="mini-label">Category 02</span>
+           <h3>Exclusive</h3>
+          </div>
+          <span class="night-rate-toggle">+</span>
+         </summary>
+         <div class="night-rate-body">
+          <div class="night-modal-split">
+           <div class="night-rate-column">
+            <section class="night-info-card night-rate-block">
+             <h4>Package list</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">(1 jam : 1x)</span><span class="night-price-leader"></span><strong>3500</strong></div>
+              <div class="night-price-row"><span class="night-price-name">(2 jam : 1x)</span><span class="night-price-leader"></span><strong>6000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">(3 jam : 2x)</span><span class="night-price-leader"></span><strong>8000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">(1 jam : unlimited)</span><span class="night-price-leader"></span><strong>4000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">(2 jam : unlimited)</span><span class="night-price-leader"></span><strong>7000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">(3 jam : unlimited)</span><span class="night-price-leader"></span><strong>9000</strong></div>
+             </div>
+            </section>
+            <section class="night-info-card night-rate-block">
+             <h4>Longtime .1on1 BO</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">(4 jam : unlimited)</span><span class="night-price-leader"></span><strong>10000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">(9 jam : unlimited)</span><span class="night-price-leader"></span><strong>15000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">(22.00-08.00)</span><span class="night-price-leader"></span><strong>16000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">(23.00-11.00)</span><span class="night-price-leader"></span><strong>18000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">(15.00-11.00 next day)</span><span class="night-price-leader"></span><strong>25000</strong></div>
+             </div>
+            </section>
+            <section class="night-info-card night-rate-block">
+             <h4>3S</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">FFM: (1 jam)</span><span class="night-price-leader"></span><strong>6000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">MMF (1 jam)</span><span class="night-price-leader"></span><strong>8000</strong></div>
+             </div>
+            </section>
+            <section class="night-info-card night-rate-block">
+             <h4>BDSM</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">FEMDOM SCENE ONLY (1 jam)</span><span class="night-price-leader"></span><strong>3000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">FEMDOM INC SEX (1 jam)</span><span class="night-price-leader"></span><strong>5000</strong></div>
+             </div>
+            </section>
+           </div>
+           <section class="night-info-card night-rate-block">
+            <h4>Booking note</h4>
+            <ul class="night-info-list">
+             <li><strong>Include:</strong> rates + 300k untuk biaya room.</li>
+             <li>DP 50% dari rates + 300k.</li>
+             <li><strong>Notes:</strong> request open room mendadak +750k.</li>
+             <li><strong>Exclude:</strong> rates + biaya transport PP.</li>
+             <li>DP 50% dari rates + transport PP.</li>
+             <li><strong>Notes:</strong> panggilan dadakan ke room +300k di luar rates dan transport.</li>
+             <li><strong>GF Rent & BJIC:</strong> rates + transport.</li>
+             <li>DP 50% dari rates + transport PP.</li>
+             <li><strong>Notes:</strong> booking dadakan di hari H dikenakan charge +300k di luar rates dan transport.</li>
+            </ul>
+            <h4>Payment note</h4>
+            <ul class="night-info-list">
+             <li>Payment selalu via QRIS agar tetap lebih private untuk kedua pihak.</li>
+             <li>Tambahkan 3k untuk admin fee merchant QRIS.</li>
+             <li>Terima kasih.</li>
+            </ul>
+           </section>
+          </div>
+         </div>
+        </details>
+        <details class="night-rate-card night-rate-card-c">
+         <summary class="night-rate-summary">
+          <div>
+           <span class="mini-label">Category 03</span>
+           <h3>Content</h3>
+          </div>
+          <span class="night-rate-toggle">+</span>
+         </summary>
+         <div class="night-rate-body">
+          <div class="night-modal-split">
+           <div class="night-rate-column">
+            <section class="night-info-card night-rate-block">
+             <h4>Priv Channel Only (Access 2 mo)</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">Private Channel</span><span class="night-price-leader"></span><strong>1500</strong></div>
+              <div class="night-price-row"><span class="night-price-name">Voice Content Channel</span><span class="night-price-leader"></span><strong>1500</strong></div>
+             </div>
+            </section>
+            <section class="night-info-card night-rate-block">
+             <h4>Custom Content (Custom Only)</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">Custom Reg</span><span class="night-price-leader"></span><strong>2000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">Custom Plus</span><span class="night-price-leader"></span><strong>2700</strong></div>
+             </div>
+            </section>
+            <section class="night-info-card night-rate-block">
+             <h4>Fullpack Content (Channel+Custom)</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">VIP Content</span><span class="night-price-leader"></span><strong>3000</strong></div>
+              <div class="night-price-row"><span class="night-price-name">VVIP Content (Fullpack)</span><span class="night-price-leader"></span><strong>4000</strong></div>
+             </div>
+            </section>
+           </div>
+           <section class="night-info-card night-rate-block">
+            <h4>Detail bills</h4>
+            <ul class="night-info-list">
+             <li><strong>Include:</strong> rates + 300k untuk biaya room.</li>
+             <li>DP 50% dari rates + 300k.</li>
+             <li><strong>Notes:</strong> request open room mendadak +750k.</li>
+             <li><strong>Exclude:</strong> rates + biaya transport PP.</li>
+             <li>DP 50% dari rates + transport PP.</li>
+             <li><strong>Notes:</strong> panggilan dadakan ke room +300k di luar rates dan transport.</li>
+             <li><strong>Special booking:</strong> rates + transport.</li>
+             <li>DP 50% dari rates + transport PP.</li>
+             <li><strong>Notes:</strong> booking dadakan di hari H dikenakan charge +300k di luar rates dan transport.</li>
+            </ul>
+            <h4>Payment note</h4>
+            <ul class="night-info-list">
+             <li>Payment selalu via QRIS agar tetap lebih private untuk kedua pihak.</li>
+             <li>Tambahkan 3k untuk admin fee merchant QRIS.</li>
+             <li>Terima kasih.</li>
+            </ul>
+           </section>
+          </div>
+         </div>
+        </details>
+        <details class="night-rate-card night-rate-card-d">
+         <summary class="night-rate-summary">
+          <div>
+           <span class="mini-label">Category 04</span>
+           <h3>GF Rent</h3>
+          </div>
+          <span class="night-rate-toggle">+</span>
+         </summary>
+         <div class="night-rate-body">
+          <div class="night-modal-split">
+           <div class="night-rate-column">
+            <section class="night-info-card night-rate-block">
+             <h4>Rates per hour</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">Short Time (1-3 jam)</span><span class="night-price-leader"></span><strong>450/jam</strong></div>
+             </div>
+            </section>
+            <section class="night-info-card night-rate-block">
+             <h4>Package</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">Package 4 jam</span><span class="night-price-leader"></span><strong>1500</strong></div>
+              <div class="night-price-row"><span class="night-price-name">Package 6 jam</span><span class="night-price-leader"></span><strong>2100</strong></div>
+              <div class="night-price-row"><span class="night-price-name">Package 10 jam</span><span class="night-price-leader"></span><strong>3000</strong></div>
+             </div>
+            </section>
+            <section class="night-info-card night-rate-block">
+             <h4>One day trip</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">All Day (9.00-22.00)</span><span class="night-price-leader"></span><strong>4500</strong></div>
+             </div>
+            </section>
+            <section class="night-info-card night-rate-block">
+             <h4>Fun trip</h4>
+             <div class="night-price-table">
+              <div class="night-price-row"><span class="night-price-name">2 Days Trip (exc akomodasi, room misah)</span><span class="night-price-leader"></span><strong>6500</strong></div>
+              <div class="night-price-row"><span class="night-price-name">2 Days Trip + cuddling (boleh sekamar)</span><span class="night-price-leader"></span><strong>7500</strong></div>
+             </div>
+            </section>
+           </div>
+           <section class="night-info-card night-rate-block">
+            <h4>Detail bills</h4>
+            <ul class="night-info-list">
+             <li><strong>Include:</strong> rates + 300k untuk biaya room.</li>
+             <li>DP 50% dari rates + 300k.</li>
+             <li><strong>Notes:</strong> request open room mendadak +750k.</li>
+             <li><strong>Exclude:</strong> rates + biaya transport PP.</li>
+             <li>DP 50% dari rates + transport PP.</li>
+             <li><strong>Notes:</strong> panggilan dadakan ke room +300k di luar rates dan transport.</li>
+             <li><strong>Special booking:</strong> rates + transport.</li>
+             <li>DP 50% dari rates + transport PP.</li>
+             <li><strong>Notes:</strong> booking dadakan di hari H dikenakan charge +300k di luar rates dan transport.</li>
+            </ul>
+            <h4>Payment note</h4>
+            <ul class="night-info-list">
+             <li>Payment selalu via QRIS agar tetap lebih private untuk kedua pihak.</li>
+             <li>Tambahkan 3k untuk admin fee merchant QRIS.</li>
+             <li>Terima kasih.</li>
+            </ul>
+           </section>
+          </div>
+         </div>
+        </details>
+       </div>
+       <div class="night-rate-strip">
+       <div class="night-rate-note">
+         <span class="mini-label">Booking note</span>
+         <p>Please read each category carefully before booking. Availability, confirmation, and arrangement details stay subject to prior discussion.</p>
+        </div>
+       </div>
+      </div>
+     </section>
+
+     <section id="night-gallery" class="detail-section fade-in">
+      <div class="night-card section-frame">
+       <div class="featured-gallery-shell">
+        <div class="featured-gallery-head">
+         <div>
+          <span class="section-kicker">Photo Gallery</span>
+          <h2 class="section-heading night-accent">Selected Photos</h2>
+         </div>
+        </div>
+        <div class="featured-gallery-grid">
+         <button class="featured-gallery-card gallery-shape-tall gallery-trigger gallery-sensitive" type="button" data-image-src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.41%20AM.jpeg" data-image-alt="Night gallery photo 1" data-sensitive="true">
+          <img src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.41%20AM.jpeg" alt="Night gallery photo 1" class="featured-gallery-image">
+         </button>
+         <button class="featured-gallery-card gallery-shape-medium gallery-trigger gallery-sensitive" type="button" data-image-src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.42%20AM%20%281%29.jpeg" data-image-alt="Night gallery photo 2" data-sensitive="true">
+          <img src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.42%20AM%20%281%29.jpeg" alt="Night gallery photo 2" class="featured-gallery-image">
+         </button>
+         <button class="featured-gallery-card gallery-shape-small gallery-trigger" type="button" data-image-src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.42%20AM%20%282%29.jpeg" data-image-alt="Night gallery photo 3">
+          <img src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.42%20AM%20%282%29.jpeg" alt="Night gallery photo 3" class="featured-gallery-image">
+         </button>
+         <button class="featured-gallery-card gallery-shape-wide gallery-trigger" type="button" data-image-src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.42%20AM.jpeg" data-image-alt="Night gallery photo 4">
+          <img src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.42%20AM.jpeg" alt="Night gallery photo 4" class="featured-gallery-image">
+         </button>
+         <button class="featured-gallery-card gallery-shape-medium gallery-trigger" type="button" data-image-src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.43%20AM%20%281%29.jpeg" data-image-alt="Night gallery photo 5">
+          <img src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.43%20AM%20%281%29.jpeg" alt="Night gallery photo 5" class="featured-gallery-image">
+         </button>
+         <button class="featured-gallery-card gallery-shape-tall gallery-trigger gallery-sensitive" type="button" data-image-src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.43%20AM%20%282%29.jpeg" data-image-alt="Night gallery photo 6" data-sensitive="true">
+          <img src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.43%20AM%20%282%29.jpeg" alt="Night gallery photo 6" class="featured-gallery-image">
+         </button>
+         <button class="featured-gallery-card gallery-shape-small gallery-trigger gallery-sensitive" type="button" data-image-src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.43%20AM.jpeg" data-image-alt="Night gallery photo 7" data-sensitive="true">
+          <img src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.43%20AM.jpeg" alt="Night gallery photo 7" class="featured-gallery-image">
+         </button>
+         <button class="featured-gallery-card gallery-shape-medium gallery-trigger gallery-sensitive" type="button" data-image-src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.44%20AM%20%281%29.jpeg" data-image-alt="Night gallery photo 8" data-sensitive="true">
+          <img src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.44%20AM%20%281%29.jpeg" alt="Night gallery photo 8" class="featured-gallery-image">
+         </button>
+         <button class="featured-gallery-card gallery-shape-tall gallery-trigger" type="button" data-image-src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.44%20AM.jpeg" data-image-alt="Night gallery photo 9">
+          <img src="assets/night-gallery-import/WhatsApp%20Image%202026-04-03%20at%202.51.44%20AM.jpeg" alt="Night gallery photo 9" class="featured-gallery-image">
+         </button>
+        </div>
+       </div>
+     </div>
+   </section>
+  </div>
+ </div>
+</div>
+  <div class="gallery-lightbox" id="nightGalleryLightbox" aria-hidden="true">
+   <button class="gallery-lightbox-close" type="button" id="nightGalleryLightboxClose" aria-label="Close gallery preview">&times;</button>
+   <img id="nightGalleryLightboxImage" class="gallery-lightbox-image" src="" alt="">
+  </div>
+  <div class="night-modal-backdrop" id="nightDetailModal" aria-hidden="true">
+   <div class="night-modal-panel" role="dialog" aria-modal="true" aria-labelledby="nightDetailModalTitle">
+    <button class="night-modal-close" id="nightDetailModalClose" type="button" aria-label="Close detail">×</button>
+    <div class="night-modal-head">
+     <span class="mini-label" id="nightDetailModalLabel">Detail</span>
+     <h3 id="nightDetailModalTitle">Preview</h3>
+    </div>
+    <div class="night-modal-body" id="nightDetailModalBody"></div>
+   </div>
+  </div>
+  <script>
+   (() => {
+    const galleryLightbox = document.getElementById("nightGalleryLightbox");
+    const galleryLightboxImage = document.getElementById("nightGalleryLightboxImage");
+    const galleryLightboxClose = document.getElementById("nightGalleryLightboxClose");
+    const galleryTriggers = document.querySelectorAll(".gallery-trigger");
+    const galleryGrid = document.querySelector(".featured-gallery-grid");
+    const modal = document.getElementById("nightDetailModal");
+    const modalClose = document.getElementById("nightDetailModalClose");
+    const modalLabel = document.getElementById("nightDetailModalLabel");
+    const modalTitle = document.getElementById("nightDetailModalTitle");
+    const modalBody = document.getElementById("nightDetailModalBody");
+    const cards = Array.from(document.querySelectorAll(".night-tnc-card, .night-rate-card"));
+
+    const layoutMasonry = () => {
+     if (!galleryGrid) return;
+     const items = galleryGrid.querySelectorAll(".featured-gallery-card");
+     if (window.innerWidth <= 640) {
+      items.forEach((item) => {
+       item.style.gridRowEnd = "auto";
+      });
+      return;
+     }
+     const rowHeight = 8;
+     const gap = 16;
+     items.forEach((item) => {
+      const itemHeight = item.getBoundingClientRect().height;
+      const rowSpan = Math.ceil((itemHeight + gap) / (rowHeight + gap));
+      item.style.gridRowEnd = `span ${rowSpan}`;
+     });
+    };
+
+    const closeGalleryLightbox = () => {
+     if (!galleryLightbox) return;
+     galleryLightbox.classList.remove("is-open");
+     galleryLightbox.setAttribute("aria-hidden", "true");
+     galleryLightboxImage.src = "";
+     galleryLightboxImage.alt = "";
+     galleryLightboxImage.classList.remove("is-sensitive");
+    };
+
+    const closeModal = () => {
+     modal.setAttribute("aria-hidden", "true");
+     document.body.classList.remove("night-modal-open");
+     modalTitle.textContent = "";
+     modalBody.innerHTML = "";
+    };
+
+    const openModal = (card) => {
+     const label = card.querySelector(".mini-label");
+     const title = card.querySelector("h3");
+     const body = card.querySelector(".night-tnc-body, .night-rate-body");
+     if (!body) return;
+
+     modalLabel.textContent = label ? label.textContent : "Detail";
+     modalTitle.textContent = title ? title.textContent : "Preview";
+     modalBody.innerHTML = body.innerHTML;
+     modal.setAttribute("aria-hidden", "false");
+     document.body.classList.add("night-modal-open");
+    };
+
+    cards.forEach((card) => {
+     const summary = card.querySelector("summary");
+     if (!summary) return;
+     summary.addEventListener("click", (event) => {
+      event.preventDefault();
+      card.open = false;
+      openModal(card);
+     });
+    });
+
+    galleryTriggers.forEach((trigger) => {
+     trigger.addEventListener("click", () => {
+      const src = trigger.getAttribute("data-image-src");
+      const alt = trigger.getAttribute("data-image-alt") || "";
+      const isSensitive = trigger.getAttribute("data-sensitive") === "true";
+      if (!src || !galleryLightbox || !galleryLightboxImage) return;
+      galleryLightboxImage.src = src;
+      galleryLightboxImage.alt = alt;
+      galleryLightboxImage.classList.toggle("is-sensitive", isSensitive);
+      galleryLightbox.classList.add("is-open");
+      galleryLightbox.setAttribute("aria-hidden", "false");
+     });
+    });
+
+    if (galleryGrid) {
+     const galleryImages = galleryGrid.querySelectorAll("img");
+     galleryImages.forEach((image) => {
+      if (image.complete) layoutMasonry();
+      else image.addEventListener("load", layoutMasonry);
+     });
+     window.addEventListener("resize", layoutMasonry);
+    }
+
+    galleryLightboxClose?.addEventListener("click", closeGalleryLightbox);
+    galleryLightbox?.addEventListener("click", (event) => {
+     if (event.target === galleryLightbox) closeGalleryLightbox();
+    });
+    modalClose.addEventListener("click", closeModal);
+    modal.addEventListener("click", (event) => {
+     if (event.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", (event) => {
+     if (event.key === "Escape" && galleryLightbox?.classList.contains("is-open")) {
+      closeGalleryLightbox();
+     }
+     if (event.key === "Escape" && modal.getAttribute("aria-hidden") === "false") {
+      closeModal();
+     }
+    });
+   })();
+  </script>
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/init.js"></script>
+ </body>
+</html>
