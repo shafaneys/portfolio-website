@@ -170,9 +170,10 @@ function setupScrollNav(navSelector, sectionPrefix) {
 
     const tops = links.map(link => Math.round(link.offsetTop));
     const wraps = new Set(tops).size > 1;
-    nav.classList.toggle('is-dropdown', wraps);
+    const mobileDropdown = window.innerWidth <= 768;
+    nav.classList.toggle('is-dropdown', mobileDropdown || wraps);
 
-    if (wraps && wasDropdown && wasOpen) {
+    if ((mobileDropdown || wraps) && wasDropdown && wasOpen) {
       setDropdownState(true);
       return;
     }
@@ -211,6 +212,7 @@ function setupScrollNav(navSelector, sectionPrefix) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  setupScrollNav('#masterTabs', '');
   setupScrollNav('#jobTabs', 'job');
   setupScrollNav('#nightTabs', 'night');
 });

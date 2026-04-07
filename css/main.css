@@ -25,6 +25,545 @@ html, body {
   flex-direction: column;
 }
 
+.portfolio-scroll-page {
+  display: block;
+}
+
+.portfolio-master-shell {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  padding: 0.6rem 1rem 0;
+  pointer-events: none;
+  transition:
+    transform 0.28s ease,
+    opacity 0.28s ease;
+}
+
+.portfolio-master-nav {
+  width: min(100%, 680px);
+  margin: 0 auto;
+  min-height: auto;
+  padding: 0.45rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(92, 74, 66, 0.09);
+  box-shadow: 0 10px 28px rgba(92, 74, 66, 0.08);
+  backdrop-filter: blur(16px);
+  pointer-events: auto;
+}
+
+.portfolio-master-shell.is-hidden {
+  opacity: 0;
+  transform: translateY(-12px);
+}
+
+.portfolio-master-shell.is-hidden .portfolio-master-nav {
+  pointer-events: none;
+}
+
+.portfolio-master-nav .nav-pill {
+  min-width: 0;
+  padding: 0.65rem 1.15rem;
+  color: #6f645c;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+}
+
+.portfolio-master-nav .nav-pill:hover,
+.portfolio-master-nav .nav-pill.active {
+  color: #2f4882;
+  border-color: rgba(47, 72, 130, 0.12);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 4px 12px rgba(47, 72, 130, 0.08);
+}
+
+.job-theme .detail-scroll-nav,
+.night-theme .detail-scroll-nav {
+  width: min(100%, 680px);
+  min-height: auto;
+  padding: 0.45rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(92, 74, 66, 0.09);
+  box-shadow: 0 10px 28px rgba(92, 74, 66, 0.08);
+  backdrop-filter: blur(16px);
+}
+
+.job-theme .job-tab,
+.night-theme .night-tab {
+  min-width: 0;
+  padding: 0.65rem 1.15rem;
+  color: #6f645c;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  border-radius: 999px;
+  box-shadow: none;
+}
+
+.job-theme .job-tab:hover,
+.job-theme .job-tab.active,
+.night-theme .night-tab:hover,
+.night-theme .night-tab.active {
+  color: #2f4882;
+  border-color: rgba(47, 72, 130, 0.12);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 4px 12px rgba(47, 72, 130, 0.08);
+}
+
+.job-theme .detail-scroll-nav-toggle,
+.night-theme .detail-scroll-nav-toggle {
+  min-height: 2.8rem;
+  border: 1px solid rgba(92, 74, 66, 0.08);
+  background: rgba(255, 255, 255, 0.94);
+  color: #5c4a42;
+  box-shadow: 0 10px 24px rgba(92, 74, 66, 0.08);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  border-radius: 0.85rem;
+}
+
+.portfolio-side-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.portfolio-section-label {
+  display: block;
+  width: min(100%, 960px);
+  margin: 0 auto 1.1rem;
+  padding-top: 0.75rem;
+  text-align: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  position: relative;
+  z-index: 6;
+}
+
+.job-theme .portfolio-section-label {
+  color: #0066ff;
+}
+
+.night-theme .portfolio-section-label {
+  color: #ff1493;
+}
+
+.job-ratecard-shell {
+  padding: 0.75rem;
+}
+
+.job-ratecard-head {
+  margin-bottom: 0.45rem;
+}
+
+.job-ratecard-head .section-heading {
+  margin-bottom: 0.35rem;
+}
+
+.job-ratecard-embedded .yiyaa-accordion-stack {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.job-ratecard-embedded .yiyaa-accordion-card {
+  border-radius: 1rem;
+}
+
+.job-ratecard-embedded .yiyaa-accordion-summary {
+  padding: 0.5rem 0.8rem;
+  min-height: 64px;
+}
+
+.job-ratecard-embedded .yiyaa-accordion-summary .section-heading {
+  font-size: 0.98rem;
+  line-height: 1.2;
+}
+
+.job-ratecard-embedded .yiyaa-accordion-content {
+  padding: 0 1rem 1rem;
+}
+
+.job-ratecard-embedded .yiyaa-accordion-summary .section-kicker {
+  margin-bottom: 0.12rem;
+  font-size: 0.64rem;
+}
+
+.job-ratecard-embedded .yiyaa-accordion-icon {
+  width: 2.15rem;
+  height: 2.15rem;
+  font-size: 1.15rem;
+}
+
+.job-ratecard-embedded .yiyaa-character-showcase {
+  gap: 0.85rem;
+}
+
+.job-ratecard-embedded .yiyaa-profile-hero,
+.job-ratecard-embedded .yiyaa-dodonts-shell,
+.job-ratecard-embedded .yiyaa-rate-info-shell {
+  padding: 0.4rem 0 0;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.job-ratecard-embedded .yiyaa-stats-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.job-ratecard-embedded .stat-item,
+.job-ratecard-embedded .highlight-card,
+.job-ratecard-embedded .info-card,
+.job-ratecard-embedded .yiyaa-dodonts-card,
+.job-ratecard-embedded .yiyaa-rate-info-card,
+.job-ratecard-embedded .yiyaa-booking-step,
+.job-ratecard-embedded .yiyaa-rate-manifesto-card {
+  padding: 0.9rem;
+}
+
+.job-ratecard-embedded .stat-item {
+  display: grid;
+  grid-template-columns: 1.65rem 1fr;
+  gap: 0.45rem;
+  align-items: center;
+  padding: 0.62rem;
+  min-height: 0;
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0, 102, 255, 0.08);
+  box-shadow: none;
+}
+
+.job-ratecard-embedded .stat-item:hover,
+.job-ratecard-embedded .highlight-card:hover,
+.job-ratecard-embedded .info-card:hover,
+.job-ratecard-embedded .yiyaa-dodonts-card:hover,
+.job-ratecard-embedded .yiyaa-rate-info-card:hover,
+.job-ratecard-embedded .yiyaa-booking-step:hover,
+.job-ratecard-embedded .yiyaa-rate-manifesto-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.job-ratecard-embedded .stat-icon {
+  width: 1.65rem;
+  height: 1.65rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+.job-ratecard-embedded .stat-label {
+  font-size: 0.58rem;
+  margin-bottom: 0.08rem;
+}
+
+.job-ratecard-embedded .stat-value {
+  font-size: 0.78rem;
+  line-height: 1.2;
+}
+
+.job-ratecard-embedded .profile-info h3 {
+  font-size: 1.25rem;
+}
+
+.job-ratecard-embedded .profile-info p,
+.job-ratecard-embedded .highlight-content p,
+.job-ratecard-embedded .info-card p,
+.job-ratecard-embedded .yiyaa-dodonts-card-head p,
+.job-ratecard-embedded .yiyaa-rate-info-head p,
+.job-ratecard-embedded .yiyaa-rate-info-card p,
+.job-ratecard-embedded .yiyaa-booking-step p,
+.job-ratecard-embedded .yiyaa-rate-manifesto-card p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.job-ratecard-embedded .yiyaa-dodonts-grid,
+.job-ratecard-embedded .yiyaa-rate-info-grid,
+.job-ratecard-embedded .yiyaa-rate-manifesto {
+  gap: 0.75rem;
+}
+
+.job-ratecard-embedded .highlight-card,
+.job-ratecard-embedded .info-card,
+.job-ratecard-embedded .yiyaa-dodonts-card,
+.job-ratecard-embedded .yiyaa-rate-info-card,
+.job-ratecard-embedded .yiyaa-booking-step,
+.job-ratecard-embedded .yiyaa-rate-manifesto-card {
+  box-shadow: none;
+}
+
+.job-ratecard-embedded .yiyaa-dodonts-card,
+.job-ratecard-embedded .yiyaa-rate-info-card,
+.job-ratecard-embedded .yiyaa-booking-step,
+.job-ratecard-embedded .yiyaa-rate-manifesto-card,
+.job-ratecard-embedded .highlight-card,
+.job-ratecard-embedded .info-card {
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(0, 102, 255, 0.06);
+}
+
+.job-ratecard-embedded .yiyaa-dodonts-card {
+  padding: 0.7rem 0.8rem;
+  border-radius: 0.95rem;
+}
+
+.job-ratecard-embedded .yiyaa-dodonts-card-head {
+  gap: 0.28rem;
+}
+
+.job-ratecard-embedded .yiyaa-dodonts-card h3 {
+  font-size: 0.98rem;
+  margin: 0;
+}
+
+.job-ratecard-embedded .yiyaa-dodonts-card-head p {
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.job-ratecard-embedded .yiyaa-signal-card {
+  padding: 0.48rem 0.7rem;
+  font-size: 0.72rem;
+}
+
+.job-ratecard-embedded .yiyaa-rule-card-list {
+  gap: 0.42rem;
+  margin-top: 0.55rem;
+}
+
+.job-ratecard-embedded .yiyaa-rate-info-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.job-ratecard-embedded .yiyaa-rate-info-card {
+  padding: 0.8rem 0.85rem;
+  border-radius: 0.95rem;
+  box-shadow: none;
+}
+
+.job-ratecard-embedded .yiyaa-rate-info-card h4 {
+  font-size: 0.88rem;
+}
+
+.job-ratecard-embedded .yiyaa-rate-info-card p {
+  font-size: 0.84rem;
+  line-height: 1.48;
+}
+
+.job-ratecard-embedded .yiyaa-rule-card-list {
+  gap: 0.55rem;
+}
+
+.job-ratecard-embedded .yiyaa-rule-card {
+  padding: 0.8rem 0.9rem 0.8rem 1rem;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: none;
+}
+
+.job-ratecard-embedded .yiyaa-rule-card p {
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.job-ratecard-embedded .yiyaa-booking-roadmap {
+  gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .job-ratecard-shell {
+    padding: 0.72rem;
+  }
+
+  .job-ratecard-head {
+    margin-bottom: 0.4rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-accordion-summary {
+    padding: 0.46rem 0.72rem;
+    min-height: 60px;
+  }
+
+  .job-ratecard-embedded .yiyaa-accordion-content {
+    padding: 0 0.9rem 0.9rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-profile-hero {
+    gap: 0.9rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-rate-info-grid {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-dodonts-card,
+  .job-ratecard-embedded .yiyaa-rate-info-card,
+  .job-ratecard-embedded .yiyaa-booking-step,
+  .job-ratecard-embedded .yiyaa-rate-manifesto-card,
+  .job-ratecard-embedded .highlight-card,
+  .job-ratecard-embedded .info-card {
+    padding: 0.72rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .job-ratecard-shell {
+    padding: 0.68rem;
+  }
+
+  .job-ratecard-head .section-heading {
+    font-size: 1.05rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-accordion-summary .section-heading {
+    font-size: 0.9rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-accordion-summary {
+    padding: 0.42rem 0.68rem;
+    min-height: 54px;
+  }
+
+  .job-ratecard-embedded .yiyaa-accordion-icon {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-character-showcase {
+    gap: 0.9rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-profile-hero,
+  .job-ratecard-embedded .yiyaa-dodonts-shell,
+  .job-ratecard-embedded .yiyaa-rate-info-shell {
+    padding-top: 0.3rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-dodonts-grid,
+  .job-ratecard-embedded .yiyaa-rate-info-grid,
+  .job-ratecard-embedded .yiyaa-rate-manifesto {
+    grid-template-columns: 1fr;
+  }
+
+  .job-ratecard-embedded .yiyaa-rate-info-card {
+    padding: 0.78rem 0.82rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.42rem;
+  }
+
+  .job-ratecard-embedded .stat-item {
+    grid-template-columns: 1fr;
+    gap: 0.28rem;
+    justify-items: stretch;
+    align-items: center;
+    padding: 0.52rem 0.56rem;
+    text-align: center;
+  }
+
+  .job-ratecard-embedded .stat-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .job-ratecard-embedded .stat-label {
+    font-size: 0.5rem;
+    text-align: center;
+  }
+
+  .job-ratecard-embedded .stat-value {
+    font-size: 0.64rem;
+    text-align: center;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .job-ratecard-embedded .stat-content {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    max-width: 92%;
+    margin: 0 auto;
+  }
+
+  .job-ratecard-embedded .yiyaa-dodonts-card {
+    padding: 0.62rem 0.7rem;
+    border-radius: 0.85rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-dodonts-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-dodonts-card-head p,
+  .job-ratecard-embedded .yiyaa-rate-info-head p,
+  .job-ratecard-embedded .yiyaa-rate-info-card p,
+  .job-ratecard-embedded .yiyaa-booking-step p,
+  .job-ratecard-embedded .yiyaa-rate-manifesto-card p,
+  .job-ratecard-embedded .highlight-content p,
+  .job-ratecard-embedded .info-card p {
+    font-size: 0.8rem;
+    line-height: 1.42;
+  }
+
+  .job-ratecard-embedded .yiyaa-signal-card {
+    padding: 0.42rem 0.58rem;
+    font-size: 0.68rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-rule-card p,
+  .job-ratecard-embedded .profile-info p,
+  .job-ratecard-embedded .highlight-content p,
+  .job-ratecard-embedded .info-card p,
+  .job-ratecard-embedded .yiyaa-rate-info-head p,
+  .job-ratecard-embedded .yiyaa-rate-info-card p,
+  .job-ratecard-embedded .yiyaa-booking-step p,
+  .job-ratecard-embedded .yiyaa-rate-manifesto-card p {
+    font-size: 0.84rem;
+  }
+}
+
+.job-theme .detail-scroll-nav,
+.night-theme .detail-scroll-nav {
+  margin-top: 0;
+}
+
+.job-theme .detail-shell,
+.night-theme .detail-shell {
+  padding-top: 1.75rem;
+}
+
+#jobSection,
+#nightSection {
+  padding-top: 2.5rem;
+}
+
+#jobSection .portfolio-section-label,
+#nightSection .portfolio-section-label {
+  margin-bottom: 1.35rem;
+}
+
 /* Landing section */
 .landing-wrapper {
   background: #FFFFFF;
@@ -113,10 +652,10 @@ html, body {
 
 /* Nav Pill */
 .nav-pill {
-  padding: 0.65rem 1.6rem;
+  padding: 0.65rem 1.15rem;
   border-radius: 9999px;
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   transition: all 0.3s;
   cursor: pointer;
@@ -455,16 +994,16 @@ html, body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: 0.65rem;
+  gap: 0.45rem;
   width: 100%;
-  max-width: 1380px;
+  max-width: 680px;
   min-width: 0;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem 2.25rem;
+  padding: 0.45rem;
   margin-bottom: 2rem;
-  border-radius: 1.25rem;
+  border-radius: 999px;
   backdrop-filter: blur(12px);
   overflow: visible;
 }
@@ -473,23 +1012,27 @@ html, body {
   display: none;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0.75rem;
-  padding: 0.85rem 1rem;
-  border-radius: 1rem;
+  padding: 0.78rem 1rem;
+  border-radius: 0.9rem;
   border: 1px solid transparent;
   background: transparent;
   font: inherit;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
 }
 
 .detail-scroll-nav-toggle-label {
+  display: block;
+  width: 100%;
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-align: center;
 }
 
 .detail-scroll-nav-toggle-icon {
@@ -509,7 +1052,7 @@ html, body {
 .detail-scroll-nav.is-dropdown a {
   display: none;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .detail-scroll-nav.is-dropdown.is-open a {
@@ -610,6 +1153,124 @@ html, body {
 
 .profile-side {
   grid-column: 2;
+}
+
+.job-theme #job-profile .split-hero {
+  grid-template-columns: minmax(0, 1.14fr) minmax(260px, 0.86fr);
+  gap: 1rem;
+  padding: 1.05rem;
+  border-radius: 1.45rem;
+}
+
+.job-theme #job-profile .profile-heading-row {
+  gap: 0.85rem;
+  margin-bottom: 0.65rem;
+}
+
+.job-theme #job-profile .profile-badge-image {
+  width: clamp(70px, 8vw, 92px);
+  border-radius: 1.15rem;
+}
+
+.job-theme #job-profile .section-heading {
+  margin-bottom: 0.55rem;
+}
+
+.job-theme #job-profile .section-lead {
+  max-width: 60ch;
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+.job-theme #job-profile .hero-meta-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.job-theme #job-profile .hero-intro-panel,
+.job-theme #job-profile .hero-fact-list {
+  height: 100%;
+}
+
+.job-theme #job-profile .hero-intro-panel {
+  padding: 0.85rem 0.95rem;
+  border-radius: 1rem;
+}
+
+.job-theme #job-profile .hero-intro-panel p,
+.job-theme #job-profile .hero-fact p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.job-theme #job-profile .hero-fact-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.job-theme #job-profile .hero-fact {
+  padding: 0.8rem 0.9rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(0, 102, 255, 0.08);
+}
+
+.job-theme #job-profile .profile-side {
+  padding: 1rem !important;
+  border-radius: 1.25rem;
+  display: grid;
+  align-content: start;
+  gap: 0.9rem;
+}
+
+.job-theme #job-profile .profile-side .mb-5 {
+  margin-bottom: 0;
+}
+
+.job-theme #job-profile .profile-side .section-heading {
+  font-size: 1.15rem !important;
+}
+
+.job-theme #job-profile .profile-side .section-lead {
+  font-size: 0.88rem !important;
+  line-height: 1.55;
+}
+
+.job-theme #job-profile .section-grid-two {
+  gap: 0.75rem;
+}
+
+.job-theme #job-profile .mini-card {
+  padding: 0.85rem 0.9rem;
+  border-radius: 1rem;
+}
+
+.job-theme #job-profile .mini-card p {
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.job-theme #job-profile .stat-strip {
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.job-theme #job-profile .stat-panel {
+  padding: 0.9rem 0.75rem;
+  border-radius: 1rem;
+}
+
+.job-theme #job-profile .stat-panel strong {
+  font-size: 1.55rem;
+  margin-bottom: 0.25rem;
+}
+
+.job-theme #job-profile .stat-panel .font-mono {
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
 }
 
 .mosaic-grid {
@@ -1725,6 +2386,10 @@ html, body {
 }
 
 @media (max-width: 768px) {
+  .portfolio-master-shell {
+    padding: 0.55rem 0.8rem 0;
+  }
+
   .yiyaa-dodonts-shell {
     gap: 0.9rem;
     padding: 0.9rem;
@@ -1982,6 +2647,48 @@ html, body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .job-theme #job-profile .split-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.9rem;
+    padding: 0.95rem;
+  }
+
+  .job-theme #job-profile .split-hero > div:first-child,
+  .job-theme #job-profile .profile-side {
+    display: block;
+    min-width: 0;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .job-theme #job-profile .profile-heading-row {
+    align-items: center;
+  }
+
+  .job-theme #job-profile .hero-meta-grid {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .job-theme #job-profile .profile-side {
+    grid-column: auto;
+    order: 2;
+    position: static;
+    margin: 0;
+    padding: 0.9rem !important;
+  }
+
+  .job-theme #job-profile .section-grid-two {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .job-theme #job-profile .mini-card {
+    min-height: 100%;
+  }
+
   .highlight-band aside {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2003,6 +2710,80 @@ html, body {
 }
 
 @media (max-width: 560px) {
+  .job-ratecard-embedded .yiyaa-stats-grid {
+    width: calc(100% + 12px);
+    margin-left: -12px;
+    margin-right: 0;
+  }
+
+  .job-ratecard-embedded .yiyaa-stats-grid .stat-item {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .job-ratecard-embedded .yiyaa-stats-grid .stat-icon {
+    margin: 0 auto 0.15rem;
+  }
+
+  .job-ratecard-embedded .yiyaa-stats-grid .stat-content {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    transform: translateX(-8px);
+  }
+
+  .job-ratecard-embedded .yiyaa-stats-grid .stat-label,
+  .job-ratecard-embedded .yiyaa-stats-grid .stat-value {
+    text-align: center;
+  }
+
+  .portfolio-master-nav {
+    width: min(100%, 420px);
+    padding: 0.45rem;
+    border-radius: 1rem;
+  }
+
+  .portfolio-master-nav.is-dropdown {
+    display: grid;
+    justify-content: stretch;
+    gap: 0.35rem;
+    border-radius: 1rem;
+  }
+
+  .portfolio-master-nav.is-dropdown .detail-scroll-nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.8rem;
+    border: 1px solid rgba(92, 74, 66, 0.08);
+    background: rgba(255, 255, 255, 0.94);
+    color: #5c4a42;
+    box-shadow: 0 10px 24px rgba(92, 74, 66, 0.08);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    border-radius: 0.85rem;
+  }
+
+  .detail-scroll-nav-toggle-icon {
+    display: none;
+  }
+
+  .portfolio-master-nav.is-dropdown a {
+    display: none;
+  }
+
+  .portfolio-master-nav.is-dropdown.is-open a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.85rem;
+    background: rgba(255, 255, 255, 0.92);
+  }
+
   .hero-header {
     padding-inline: 0.7rem;
     gap: 0.75rem;
@@ -2122,10 +2903,10 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.55rem;
+    gap: 0.4rem;
     width: 100%;
-    max-width: none;
-    padding: 0.65rem;
+    max-width: 420px;
+    padding: 0.45rem;
     border-radius: 1rem;
   }
 
@@ -2133,12 +2914,33 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.55rem;
+    gap: 0.4rem;
     width: 100%;
-    max-width: none;
-    padding: 0.65rem;
+    max-width: 420px;
+    padding: 0.45rem;
     border-radius: 1rem;
     margin-bottom: 1.5rem;
+  }
+
+  .job-theme .detail-scroll-nav.is-dropdown,
+  .night-theme .detail-scroll-nav.is-dropdown {
+    display: grid;
+    justify-content: stretch;
+  }
+
+  .job-theme .detail-scroll-nav.is-dropdown .detail-scroll-nav-toggle,
+  .night-theme .detail-scroll-nav.is-dropdown .detail-scroll-nav-toggle {
+    display: inline-flex;
+  }
+
+  .job-theme .detail-scroll-nav.is-dropdown a,
+  .night-theme .detail-scroll-nav.is-dropdown a {
+    display: none;
+  }
+
+  .job-theme .detail-scroll-nav.is-dropdown.is-open a,
+  .night-theme .detail-scroll-nav.is-dropdown.is-open a {
+    display: block;
   }
 
   .night-theme .detail-topbar {
@@ -2151,30 +2953,30 @@ html, body {
   }
 
   .detail-scroll-nav-toggle {
-    padding: 0.75rem 0.9rem;
+    padding: 0.72rem 0.9rem;
   }
 
   .nav-pill {
     width: 100%;
     text-align: center;
-    padding: 0.75rem 0.9rem;
+    padding: 0.72rem 0.9rem;
   }
 
   .job-theme .nav-pill {
     min-width: 0;
-    padding: 0.6rem 0.6rem;
-    font-size: 0.65rem;
+    padding: 0.62rem 0.72rem;
+    font-size: 0.7rem;
     line-height: 1.2;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.12em;
     white-space: normal;
   }
 
   .night-theme .nav-pill {
     min-width: 0;
-    padding: 0.6rem 0.6rem;
-    font-size: 0.65rem;
+    padding: 0.62rem 0.72rem;
+    font-size: 0.7rem;
     line-height: 1.2;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.12em;
     white-space: normal;
   }
 
@@ -2282,6 +3084,98 @@ html, body {
 
   .profile-badge-image {
     width: 60px;
+  }
+
+  .job-theme #job-profile .split-hero {
+    padding: 0.82rem;
+    gap: 0.8rem;
+  }
+
+  .job-theme #job-profile .eyebrow-row {
+    gap: 0.45rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .job-theme #job-profile .profile-heading-row {
+    gap: 0.68rem;
+    align-items: flex-start;
+  }
+
+  .job-theme #job-profile .profile-badge-image {
+    width: 58px;
+    border-radius: 0.95rem;
+  }
+
+  .job-theme #job-profile .section-heading {
+    margin-bottom: 0.4rem;
+  }
+
+  .job-theme #job-profile .section-lead {
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+  .job-theme #job-profile .hero-meta-grid {
+    margin-top: 0.8rem;
+  }
+
+  .job-theme #job-profile .hero-intro-panel,
+  .job-theme #job-profile .hero-fact {
+    padding: 0.75rem 0.8rem;
+  }
+
+  .job-theme #job-profile .hero-intro-panel p,
+  .job-theme #job-profile .hero-fact p,
+  .job-theme #job-profile .mini-card p {
+    font-size: 0.8rem;
+  }
+
+  .job-theme #job-profile .profile-side {
+    grid-column: auto;
+    padding: 0.8rem !important;
+    gap: 0.75rem;
+  }
+
+  .job-theme #job-profile .profile-side .section-heading {
+    font-size: 1rem !important;
+    line-height: 1.15;
+  }
+
+  .job-theme #job-profile .section-grid-two {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+  }
+
+  .job-theme #job-profile .mini-card {
+    padding: 0.75rem 0.8rem;
+  }
+
+  .job-theme #job-profile .mini-label {
+    margin-bottom: 0.35rem;
+  }
+
+  .job-theme #job-profile .mini-card p,
+  .job-theme #job-profile .mini-card .contact-link {
+    font-size: 0.79rem;
+    line-height: 1.45;
+  }
+
+  .job-theme #job-profile .stat-strip {
+    gap: 0.55rem;
+  }
+
+  .job-theme #job-profile .stat-panel {
+    padding: 0.75rem 0.6rem;
+  }
+
+  .job-theme #job-profile .stat-panel strong {
+    font-size: 1.3rem;
+  }
+
+  .job-theme #job-profile .stat-panel .font-mono {
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
   }
 
   .hero-meta-grid {

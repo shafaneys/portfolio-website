@@ -38,20 +38,8 @@ async function onConfigChange(config) {
   if (nightAvatarInitial)
     nightAvatarInitial.textContent = getInitials(c.night_name);
 
-  // Colors
-  const landingWrapper = document.querySelector('.landing-wrapper');
-  if (landingWrapper)
-    landingWrapper.style.background = `linear-gradient(135deg, ${c.background_color} 0%, #0a0814 100%)`;
-
-  document.querySelectorAll('.job-card').forEach(el => {
-    el.style.background = c.surface_color;
-  });
-  document.querySelectorAll('.job-accent').forEach(el => {
-    el.style.color = c.primary_action_color;
-  });
-  document.querySelectorAll('.night-accent').forEach(el => {
-    el.style.color = c.secondary_action_color;
-  });
+  // Keep original theme colors from CSS so the default visual design stays intact.
+  // Config text/image updates remain active, but we no longer force global color overrides.
 
   // Font
   const fontStack = `${c.font_family}, sans-serif`;

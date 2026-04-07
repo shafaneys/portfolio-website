@@ -5,112 +5,431 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="icon" href="data:,">
-  <!-- External Libraries -->
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-  
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
-  
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/themes.css">
   <link rel="stylesheet" href="css/animations.css">
-  
-  <!-- Base styles -->
   <style>
     body { box-sizing: border-box; }
   </style>
  </head>
  <body class="h-full">
-  <div class="app-root font-syne" id="app"><!-- LANDING -->
-   <div id="landing" class="section-view active">
+  <div class="app-root font-syne" id="app">
+   <div class="portfolio-master-shell">
+    <nav class="detail-scroll-nav portfolio-master-nav fade-in" id="masterTabs">
+     <a class="nav-pill font-mono active" href="#landing">Home</a>
+     <a class="nav-pill font-mono" href="#job-section">Job</a>
+     <a class="nav-pill font-mono" href="#night-section">Night</a>
+    </nav>
+   </div>
+
+   <section id="landing" class="section-view active portfolio-scroll-page">
     <div class="landing-wrapper">
      <div class="hero-header">
-      <!-- Background Title with Subtitle -->
       <div class="title-section">
        <h1 class="portfolio-title-bg" id="heroTitle">PORTFOLIO</h1>
-       <p class="hero-subtitle fade-in stagger-1" id="heroSubtitle">Fashion & Modelling</p>
+       <p class="hero-subtitle fade-in stagger-1" id="heroSubtitle">Fashion &amp; Modelling</p>
       </div>
-      
-      <!-- Main Content Container -->
+
       <div class="portfolio-container">
-       <!-- Left Section -->
        <div class="portfolio-left portfolio-side">
-        <div class="left-option fade-in stagger-2" onclick="window.location.href='job.html'" style="cursor:pointer;">
-         <p class="side-label">JOB &<br>COLLABORATION</p>
-        </div>
+        <a class="left-option fade-in stagger-2 portfolio-side-link" href="#job-section">
+         <p class="side-label">JOB &amp;<br>COLLABORATION</p>
+        </a>
        </div>
-       
-       <!-- Center Image -->
+
        <div class="center-wrapper fade-in stagger-3">
         <img id="centerImage" src="assets/WhatsApp%20Image%202026-04-02%20at%2018.59.47.jpeg" alt="Portfolio" class="center-image">
         <div class="decorative-circle"></div>
        </div>
-       
-       <!-- Right Section -->
+
        <div class="portfolio-right portfolio-side">
-        <div class="right-option fade-in stagger-4" onclick="window.location.href='night.html'" style="cursor:pointer;">
+        <a class="right-option fade-in stagger-4 portfolio-side-link" href="#night-section">
          <p class="side-label">NIGHT<br>LIFE</p>
-        </div>
+        </a>
        </div>
       </div>
-      
-      <!-- Bottom Decorative Dots -->
+
       <div class="decorative-dots fade-in stagger-5">
        <span class="dot dot-yellow"></span>
        <span class="dot dot-blue"></span>
        <span class="dot dot-pink"></span>
       </div>
-      
-      <!-- Footer -->
+
       <div class="portfolio-footer fade-in stagger-6">
        <p>&copy; 2026 PORTFOLIO</p>
       </div>
      </div>
     </div>
-   </div>
+   </section>
+
+   <div id="jobMount"></div>
+   <div id="nightMount"></div>
   </div>
-  <!-- JavaScript Modules -->
-    <script src="js/config.js"></script>
+
+  <script src="js/config.js"></script>
   <script src="js/utils.js"></script>
   <script src="js/navigation.js"></script>
   <script src="js/init.js"></script>
-  
-  <!-- Cloudflare Challenge Script -->
   <script>
-    (function(){
-      function c(){
-        var b = a.contentDocument || a.contentWindow.document;
-        if(b){
-          var d = b.createElement('script');
-          d.innerHTML = "window.__CF$cv$params={r:'9e5ed46ca127266d',t:'MTc3NTEyMjM4My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-          b.getElementsByTagName('head')[0].appendChild(d);
+    (() => {
+      const parser = new DOMParser();
+      const appRoot = document.getElementById('app');
+      const masterShell = document.querySelector('.portfolio-master-shell');
+
+      const rewriteInternalBackLinks = (root) => {
+        root.querySelectorAll('.detail-topbar').forEach((topbar) => {
+          const label = topbar.querySelector('.font-mono');
+          const nav = root.querySelector('.detail-scroll-nav');
+          const detailShell = root.querySelector('.detail-shell');
+
+          if (label && nav && detailShell && !root.querySelector('.portfolio-section-label')) {
+            const sectionLabel = document.createElement('div');
+            sectionLabel.className = 'portfolio-section-label font-mono';
+            sectionLabel.textContent = label.textContent.trim();
+            detailShell.insertBefore(sectionLabel, nav);
+          }
+
+          topbar.remove();
+        });
+
+        root.querySelectorAll('a[href="index.html"]').forEach((link) => {
+          link.setAttribute('href', '#landing');
+        });
+      };
+
+      const setupJobLightbox = (section) => {
+        const lightbox = document.getElementById('galleryLightbox');
+        const lightboxImage = document.getElementById('galleryLightboxImage');
+        const lightboxVideo = document.getElementById('galleryLightboxVideo');
+        const closeButton = document.getElementById('galleryLightboxClose');
+        const triggers = section.querySelectorAll('.gallery-trigger, .project-media-trigger');
+        const galleryGrid = section.querySelector('.featured-gallery-grid');
+
+        if (!lightbox || !lightboxImage || !lightboxVideo || !closeButton || !triggers.length) return;
+
+        function layoutMasonry() {
+          if (!galleryGrid) return;
+          const items = galleryGrid.querySelectorAll('.featured-gallery-card');
+          if (window.innerWidth <= 640) {
+            items.forEach((item) => {
+              item.style.gridRowEnd = 'auto';
+            });
+            return;
+          }
+          const gridStyles = window.getComputedStyle(galleryGrid);
+          const rowHeight = parseFloat(gridStyles.getPropertyValue('grid-auto-rows')) || 6;
+          const gap = parseFloat(gridStyles.getPropertyValue('gap')) || 14;
+          items.forEach((item) => {
+            const itemHeight = item.getBoundingClientRect().height;
+            const rowSpan = Math.ceil((itemHeight + gap) / (rowHeight + gap));
+            item.style.gridRowEnd = `span ${rowSpan}`;
+          });
         }
-      }
-      if(document.body){
-        var a = document.createElement('iframe');
-        a.height = 1;
-        a.width = 1;
-        a.style.position = 'absolute';
-        a.style.top = 0;
-        a.style.left = 0;
-        a.style.border = 'none';
-        a.style.visibility = 'hidden';
-        document.body.appendChild(a);
-        if('loading' !== document.readyState) c();
-        else if(window.addEventListener) document.addEventListener('DOMContentLoaded', c);
-        else {
-          var e = document.onreadystatechange || function(){};
-          document.onreadystatechange = function(b){
-            e(b);
-            if('loading' !== document.readyState){
-              document.onreadystatechange = e;
-              c();
+
+        function closeLightbox() {
+          lightbox.classList.remove('is-open');
+          lightbox.setAttribute('aria-hidden', 'true');
+          lightboxImage.src = '';
+          lightboxImage.alt = '';
+          lightboxImage.style.display = 'none';
+          lightboxVideo.pause();
+          lightboxVideo.removeAttribute('src');
+          lightboxVideo.load();
+          lightboxVideo.style.display = 'none';
+        }
+
+        triggers.forEach((trigger) => {
+          trigger.addEventListener('click', () => {
+            const src = trigger.getAttribute('data-image-src') || trigger.getAttribute('data-media-src');
+            const alt = trigger.getAttribute('data-image-alt') || trigger.getAttribute('data-media-alt') || '';
+            const mediaType = trigger.getAttribute('data-media-type') || 'image';
+            if (!src) return;
+            if (mediaType === 'video') {
+              lightboxImage.src = '';
+              lightboxImage.alt = '';
+              lightboxImage.style.display = 'none';
+              lightboxVideo.src = src;
+              lightboxVideo.style.display = 'block';
+            } else {
+              lightboxVideo.pause();
+              lightboxVideo.removeAttribute('src');
+              lightboxVideo.load();
+              lightboxVideo.style.display = 'none';
+              lightboxImage.src = src;
+              lightboxImage.alt = alt;
+              lightboxImage.style.display = 'block';
             }
+            lightbox.classList.add('is-open');
+            lightbox.setAttribute('aria-hidden', 'false');
+          });
+        });
+
+        if (galleryGrid) {
+          const galleryImages = galleryGrid.querySelectorAll('img');
+          galleryImages.forEach((image) => {
+            const markLoaded = () => {
+              image.classList.add('is-loaded');
+              requestAnimationFrame(layoutMasonry);
+            };
+            if (image.complete) markLoaded();
+            else image.addEventListener('load', markLoaded, { once: true });
+          });
+          window.addEventListener('resize', layoutMasonry);
+          layoutMasonry();
+        }
+
+        closeButton.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (event) => {
+          if (event.target === lightbox) closeLightbox();
+        });
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape') closeLightbox();
+        });
+      };
+
+      const injectJobRatecard = async (section) => {
+        const response = await fetch('job-ratecard.html');
+        const html = await response.text();
+        const doc = parser.parseFromString(html, 'text/html');
+        const ratecardContent = doc.querySelector('.yiyaa-ratecard-page .detail-section');
+        const gallerySection = section.querySelector('#job-gallery');
+        const ratecardTab = section.querySelector('#jobTabs a[href="job-ratecard.html"]');
+        const galleryTab = section.querySelector('#jobTabs a[href="#job-gallery"]');
+
+        if (!ratecardContent || !gallerySection) return;
+
+        const injectedSection = document.createElement('section');
+        injectedSection.id = 'job-ratecard';
+        injectedSection.className = 'detail-section fade-in yiyaa-ratecard-page job-ratecard-embedded';
+        injectedSection.innerHTML = `
+          <div class="job-card section-frame job-ratecard-shell">
+            <div class="job-ratecard-head">
+              <span class="section-kicker">Rate Card</span>
+              <h2 class="section-heading job-accent">Service & Availability</h2>
+            </div>
+            ${ratecardContent.innerHTML}
+          </div>
+        `;
+
+        gallerySection.parentNode.insertBefore(injectedSection, gallerySection);
+
+        if (ratecardTab) {
+          ratecardTab.setAttribute('href', '#job-ratecard');
+          if (galleryTab && galleryTab.parentNode === ratecardTab.parentNode) {
+            galleryTab.parentNode.insertBefore(ratecardTab, galleryTab);
           }
         }
+      };
+
+      const setupNightInteractions = (section) => {
+        const galleryLightbox = document.getElementById('nightGalleryLightbox');
+        const galleryLightboxImage = document.getElementById('nightGalleryLightboxImage');
+        const galleryLightboxClose = document.getElementById('nightGalleryLightboxClose');
+        const galleryTriggers = section.querySelectorAll('.gallery-trigger');
+        const galleryGrid = section.querySelector('.featured-gallery-grid');
+        const modal = document.getElementById('nightDetailModal');
+        const modalClose = document.getElementById('nightDetailModalClose');
+        const modalLabel = document.getElementById('nightDetailModalLabel');
+        const modalTitle = document.getElementById('nightDetailModalTitle');
+        const modalBody = document.getElementById('nightDetailModalBody');
+        const cards = Array.from(section.querySelectorAll('.night-tnc-card, .night-rate-card'));
+
+        if (!galleryLightbox || !galleryLightboxImage || !modal || !modalClose) return;
+
+        const layoutMasonry = () => {
+          if (!galleryGrid) return;
+          const items = galleryGrid.querySelectorAll('.featured-gallery-card');
+          if (window.innerWidth <= 640) {
+            items.forEach((item) => {
+              item.style.gridRowEnd = 'auto';
+            });
+            return;
+          }
+          const gridStyles = window.getComputedStyle(galleryGrid);
+          const rowHeight = parseFloat(gridStyles.getPropertyValue('grid-auto-rows')) || 6;
+          const gap = parseFloat(gridStyles.getPropertyValue('gap')) || 14;
+          items.forEach((item) => {
+            const itemHeight = item.getBoundingClientRect().height;
+            const rowSpan = Math.ceil((itemHeight + gap) / (rowHeight + gap));
+            item.style.gridRowEnd = `span ${rowSpan}`;
+          });
+        };
+
+        const closeGalleryLightbox = () => {
+          galleryLightbox.classList.remove('is-open');
+          galleryLightbox.setAttribute('aria-hidden', 'true');
+          galleryLightboxImage.src = '';
+          galleryLightboxImage.alt = '';
+          galleryLightboxImage.classList.remove('is-sensitive');
+        };
+
+        const closeModal = () => {
+          modal.setAttribute('aria-hidden', 'true');
+          document.body.classList.remove('night-modal-open');
+          modalTitle.textContent = '';
+          modalBody.innerHTML = '';
+        };
+
+        const openModal = (card) => {
+          const label = card.querySelector('.mini-label');
+          const title = card.querySelector('h3');
+          const body = card.querySelector('.night-tnc-body, .night-rate-body');
+          if (!body) return;
+
+          modalLabel.textContent = label ? label.textContent : 'Detail';
+          modalTitle.textContent = title ? title.textContent : 'Preview';
+          modalBody.innerHTML = body.innerHTML;
+          modal.setAttribute('aria-hidden', 'false');
+          document.body.classList.add('night-modal-open');
+        };
+
+        cards.forEach((card) => {
+          const summary = card.querySelector('summary');
+          if (!summary) return;
+          summary.addEventListener('click', (event) => {
+            event.preventDefault();
+            card.open = false;
+            openModal(card);
+          });
+        });
+
+        galleryTriggers.forEach((trigger) => {
+          trigger.addEventListener('click', () => {
+            const src = trigger.getAttribute('data-image-src');
+            const alt = trigger.getAttribute('data-image-alt') || '';
+            const isSensitive = trigger.getAttribute('data-sensitive') === 'true';
+            if (!src) return;
+            galleryLightboxImage.src = src;
+            galleryLightboxImage.alt = alt;
+            galleryLightboxImage.classList.toggle('is-sensitive', isSensitive);
+            galleryLightbox.classList.add('is-open');
+            galleryLightbox.setAttribute('aria-hidden', 'false');
+          });
+        });
+
+        if (galleryGrid) {
+          const galleryImages = galleryGrid.querySelectorAll('img');
+          galleryImages.forEach((image) => {
+            const relayout = () => {
+              requestAnimationFrame(layoutMasonry);
+            };
+            if (image.complete) relayout();
+            else image.addEventListener('load', relayout, { once: true });
+          });
+          window.addEventListener('resize', layoutMasonry);
+          layoutMasonry();
+        }
+
+        galleryLightboxClose?.addEventListener('click', closeGalleryLightbox);
+        galleryLightbox.addEventListener('click', (event) => {
+          if (event.target === galleryLightbox) closeGalleryLightbox();
+        });
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (event) => {
+          if (event.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && galleryLightbox.classList.contains('is-open')) {
+            closeGalleryLightbox();
+          }
+          if (event.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+            closeModal();
+          }
+        });
+      };
+
+      const loadSection = async ({ path, sourceId, mountId, overlayIds = [], beforeSetup, setup }) => {
+        const response = await fetch(path);
+        const html = await response.text();
+        const doc = parser.parseFromString(html, 'text/html');
+        const source = doc.getElementById(sourceId);
+        const mount = document.getElementById(mountId);
+        if (!source || !mount) return;
+
+        source.classList.remove('active');
+        source.style.display = 'block';
+        source.style.minHeight = 'auto';
+        rewriteInternalBackLinks(source);
+        mount.replaceWith(source);
+
+        overlayIds.forEach((id) => {
+          const overlay = doc.getElementById(id);
+          if (overlay) {
+            document.body.appendChild(overlay);
+          }
+        });
+
+        if (typeof lucide !== 'undefined') {
+          lucide.createIcons();
+        }
+
+        if (typeof beforeSetup === 'function') {
+          await beforeSetup(source);
+          if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+          }
+        }
+
+        if (typeof setupScrollNav === 'function') {
+          const sectionPrefix = sourceId === 'jobSection' ? 'job' : 'night';
+          setupScrollNav(sectionPrefix === 'job' ? '#jobTabs' : '#nightTabs', sectionPrefix);
+        }
+
+        if (typeof onConfigChange === 'function') {
+          onConfigChange(defaultConfig);
+        }
+
+          setup?.(source);
+        };
+
+      Promise.all([
+        loadSection({
+          path: 'job.html',
+          sourceId: 'jobSection',
+          mountId: 'jobMount',
+          overlayIds: ['galleryLightbox'],
+          beforeSetup: injectJobRatecard,
+          setup: setupJobLightbox
+        }),
+        loadSection({
+          path: 'night.html',
+          sourceId: 'nightSection',
+          mountId: 'nightMount',
+          overlayIds: ['nightGalleryLightbox', 'nightDetailModal'],
+          setup: setupNightInteractions
+        })
+      ]).catch((error) => {
+        console.error('Failed to load native sections:', error);
+      });
+
+      if (appRoot && masterShell) {
+        let lastScrollTop = 0;
+
+        const syncMasterNavVisibility = () => {
+          const currentScrollTop = appRoot.scrollTop;
+          const jobSection = document.getElementById('jobSection');
+          const threshold = jobSection
+            ? Math.max(220, jobSection.offsetTop - 120)
+            : 420;
+
+          const isNearTop = currentScrollTop < threshold;
+          const isScrollingUp = currentScrollTop < lastScrollTop;
+
+          masterShell.classList.toggle(
+            'is-hidden',
+            !isNearTop && !isScrollingUp && currentScrollTop > threshold
+          );
+
+          lastScrollTop = Math.max(0, currentScrollTop);
+        };
+
+        appRoot.addEventListener('scroll', syncMasterNavVisibility, { passive: true });
+        window.addEventListener('resize', syncMasterNavVisibility);
+        syncMasterNavVisibility();
       }
     })();
   </script>
